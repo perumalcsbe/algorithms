@@ -25,13 +25,11 @@ function binarySearch(arr, needle) {
   // not found
   return -1;
 }
-
 ```
 
 #### Recursive method {#recursive-method}
 
 ```js
-
 function binarySearch(arr, left, right, needle) {
   if (left <= right) {
     let mid = left + ((right - left) >>> 1); //Math.floor((left + right) / 2);
