@@ -52,7 +52,7 @@ function findMissingNumber(arr) {
     for (let i = 0; i < N; i++) {
         actualSum += arr[i];
     }
-    
+
     return expectedSum - actualSum;
 }
 ```
@@ -65,14 +65,18 @@ function findMissingNumber(arr) {
     for (let i = 1; i <= N + 1; i++) {
         totalXOR ^= i;
     } 
-    
+
     for (let i = 0; i < N; i++) {
         arrXOR ^= arr[i];
     }
-    
+
     return totalXOR ^ arrXOR;
 }
 ```
+
+#### Find Two Missing Numbers
+
+given an array from 1 - N where two numbers are missing. e.g. **\[1, 2, 5\] **and** N **is** 5 **and missing numbers are \[**3, 4\]**
 
 
 
