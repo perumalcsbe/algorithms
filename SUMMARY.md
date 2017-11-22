@@ -12,6 +12,8 @@
   * [Find A Missing Number](arrays/find-a-missing-number.md)
   * [Find the Duplicate Number](arrays/find-the-duplicate-number.md)
   * [Remove Duplicates from Sorted Array](arrays/remove-duplicates-from-sorted-array.md)
+  * [Remove Element](arrays/remove-element.md)
+  * [Move Zeroes](arrays/move-zeroes.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
 * [Two Pointers](two-pointers.md)
