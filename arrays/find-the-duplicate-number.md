@@ -20,8 +20,8 @@ function findDuplicate(arr) {
     map.set(arr[i], ++count);
   }
 
-  for(let [key, count] of map.entries()) {
-    if (count > 1) {
+  for(let [key, count] of map) {
+      if (count > 1) {
       return key;
     }
   }
