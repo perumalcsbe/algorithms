@@ -2,8 +2,6 @@
 
 given an array from 1 - N where two numbers are missing. e.g. **\[1, 2, 5\] **and** N **is** 5 **and missing numbers are \[**3, 4\]**
 
-
-
 Approach 1: using boolean array visits
 
 ```js
@@ -28,9 +26,7 @@ Time Complexity: O(n)
 Space Complexity: O(n)
 ```
 
-
-
-Approach 2: using sum & XOR 
+Approach 2: using sum & XOR
 
 ```js
 function findMissingNumbers(arr) {
@@ -51,8 +47,6 @@ function findMissingNumbers(arr) {
   return [totalAvgSum - arrLeftSum, totalSum - totalAvgSum - arrRightSum];
 }
 ```
-
-
 
 ```
 Time Complexity: O(n)
