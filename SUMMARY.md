@@ -18,6 +18,7 @@
   * [Single Number](arrays/single-number.md)
   * [Single Number II](arrays/single-number-ii.md)
   * [Single Number III](arrays/single-number-iii.md)
+  * [Median of Two Sorted Arrays](arrays/median-of-two-sorted-arrays.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)
@@ -25,7 +26,9 @@
 * [Backtracking](back-tracking.md)
 * [Stack](stack.md)
   * [Valid Parentheses](stack/valid-parentheses.md)
+  * [Decode String](stack/decode-string.md)
 * [Depth First Search](depth-first-search.md)
   * [Remove Invalid Parentheses](depth-first-search/remove-invalid-parentheses.md)
   * [Generate Parentheses](generate-parentheses.md)
+  * [Decode String](depth-first-search/decode-string.md)
 
