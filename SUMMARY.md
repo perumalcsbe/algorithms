@@ -37,6 +37,7 @@
   * [Find Middle of Linked List](find-middle-of-linked-list.md)
   * [Find Length of Linked List](find-length-of-linked-list.md)
   * [Reverse a Linked List](reverse-a-linked-list.md)
+  * [Add Two Numbers](add-two-numbers.md)
 * Math
   * [Palindrome Number](palindrome-number.md)
 
