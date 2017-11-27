@@ -27,8 +27,13 @@
 * [Stack](stack.md)
   * [Valid Parentheses](stack/valid-parentheses.md)
   * [Decode String](stack/decode-string.md)
+  * [Min Stack](stack/min-stack.md)
 * [Depth First Search](depth-first-search.md)
   * [Remove Invalid Parentheses](depth-first-search/remove-invalid-parentheses.md)
   * [Generate Parentheses](generate-parentheses.md)
   * [Decode String](depth-first-search/decode-string.md)
+* [Linked List](linked-list.md)
+  * [Palindrome Linked List](palindrome-linked-list.md)
+  * [Find Middle of Linked List](find-middle-of-linked-list.md)
+  * [Find Length of Linked List](find-length-of-linked-list.md)
 
