@@ -40,6 +40,9 @@
   * [Add Two Numbers](add-two-numbers.md)
   * [Split Linked List in Parts](split-linked-list-in-parts.md)
   * [Add Two Numbers II](add-two-numbers-ii.md)
+  * [Delete Node in a Linked List](delete-node-in-a-linked-list.md)
+  * [Odd Even Linked List](odd-even-linked-list.md)
+  * [Intersection of Two Linked Lists](intersection-of-two-linked-lists.md)
 * Math
   * [Palindrome Number](palindrome-number.md)
 
