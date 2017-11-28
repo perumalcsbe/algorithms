@@ -38,6 +38,8 @@
   * [Find Length of Linked List](find-length-of-linked-list.md)
   * [Reverse a Linked List](reverse-a-linked-list.md)
   * [Add Two Numbers](add-two-numbers.md)
+  * [Split Linked List in Parts](split-linked-list-in-parts.md)
+  * [Add Two Numbers II](add-two-numbers-ii.md)
 * Math
   * [Palindrome Number](palindrome-number.md)
 
