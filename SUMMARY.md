@@ -50,4 +50,6 @@
   * [Remove Nth Node From End of List](remove-nth-node-from-end-of-list.md)
 * Math
   * [Palindrome Number](palindrome-number.md)
+* Basic
+  * [Fizz Buzz](fizz-buzz.md)
 

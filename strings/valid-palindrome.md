@@ -6,24 +6,18 @@ Have you consider that the string might be empty? This is a good question to ask
 
 For the purpose of this problem, we define empty string as valid palindrome.
 
-
-
 **Example**
 
 `"A man, a plan, a canal: Panama"`is a palindrome.
 
 `"race a car"`is not a palindrome.
 
-
-
 O\(n\) time without extra memory.
 
-http://www.lintcode.com/en/problem/valid-palindrome/
-
-
+[http://www.lintcode.com/en/problem/valid-palindrome/](http://www.lintcode.com/en/problem/valid-palindrome/)
 
 ```java
-/*
+    /*
      * @param s: A string
      * @return: Whether the string is a valid palindrome
      */
@@ -31,10 +25,10 @@ http://www.lintcode.com/en/problem/valid-palindrome/
         if (s.length() == 0) {
             return true;
         }
-        
+
         int l = 0;
         int r = s.length() - 1;
-        
+
         while (l < r) {
             char cl = s.charAt(l);
             char cr = s.charAt(r);
@@ -48,9 +42,9 @@ http://www.lintcode.com/en/problem/valid-palindrome/
             } else {
                 return false;
             }
-            
+
         }
-        
+
         return true;
     }
 ```
