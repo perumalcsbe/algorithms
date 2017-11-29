@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+  * [HashMap](hashmap.md)
 * [Binary Search](binary-search.md)
   * [Search for a Range](binary-search/search-for-a-range.md)
   * [Intersection of Two Arrays II](binary-search/intersection-of-two-arrays-ii.md)
@@ -19,6 +20,7 @@
   * [Single Number II](arrays/single-number-ii.md)
   * [Single Number III](arrays/single-number-iii.md)
   * [Median of Two Sorted Arrays](arrays/median-of-two-sorted-arrays.md)
+  * [Majority Number](arrays/majority-number.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)

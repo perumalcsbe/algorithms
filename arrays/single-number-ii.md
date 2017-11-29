@@ -27,5 +27,33 @@ var singleNumber = function(nums) {
 };
 ```
 
+```java
+    /*
+     * @param A: An integer array
+     * @return: An integer
+     */
+    public int singleNumberII(int[] A) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < A.length; i++) {
+            int count = 1;
+            if (map.containsKey(A[i])) {
+                count += map.get(A[i]);
+            }
+
+            map.put(A[i], count);
+
+        }
+
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (entry.getValue() < 3) {
+                return entry.getKey();
+            }
+        }
+
+        return -1;
+    }
+```
+
 
 

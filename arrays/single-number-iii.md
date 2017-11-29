@@ -34,5 +34,34 @@ var singleNumber = function(nums) {
 };
 ```
 
+```java
+    /*
+     * @param A: An integer array
+     * @return: An integer array
+     */
+    public List<Integer> singleNumberIII(int[] A) {
+       List<Integer> result = new ArrayList<>();
+       Map<Integer, Integer> map = new HashMap<>();
+        
+        for (int i = 0; i < A.length; i++) {
+            int count = 1;
+            if (map.containsKey(A[i])) {
+                count += map.get(A[i]);
+            }
+            
+            map.put(A[i], count);
+            
+        }
+        
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (entry.getValue() < 2) {
+                result.add(entry.getKey());
+            }
+        }
+        
+        return result;
+    }
+```
+
 
 

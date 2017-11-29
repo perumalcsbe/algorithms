@@ -7,8 +7,6 @@ when number is divided by
 * when number is divided by both`3`and`5`, print`"fizz buzz"`
   .
 
-
-
 If_n_=`15`, you should return:
 
 ```
