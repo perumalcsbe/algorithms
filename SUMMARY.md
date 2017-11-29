@@ -22,6 +22,7 @@
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)
+  * [Valid Palindrome](strings/valid-palindrome.md)
 * [Two Pointers](two-pointers.md)
 * [Backtracking](back-tracking.md)
 * [Stack](stack.md)
@@ -43,6 +44,10 @@
   * [Delete Node in a Linked List](delete-node-in-a-linked-list.md)
   * [Odd Even Linked List](odd-even-linked-list.md)
   * [Intersection of Two Linked Lists](intersection-of-two-linked-lists.md)
+  * [Remove Duplicates from Sorted List](remove-duplicates-from-sorted-list.md)
+  * [Linked List Cycle](linked-list-cycle.md)
+  * [Linked List Cycle II](linked-list-cycle-ii.md)
+  * [Remove Nth Node From End of List](remove-nth-node-from-end-of-list.md)
 * Math
   * [Palindrome Number](palindrome-number.md)
 

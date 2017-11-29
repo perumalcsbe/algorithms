@@ -1,8 +1,5 @@
 Write a program to find the node at which the intersection of two singly linked lists begins.
 
-  
-
-
 For example, the following two linked lists:
 
 ```
@@ -11,13 +8,9 @@ A:          a1 → a2
                      c1 → c2 → c3
                    ↗            
 B:     b1 → b2 → b3
-
 ```
 
 begin to intersect at node c1.
-
-  
-
 
 **Notes:**
 
@@ -42,9 +35,9 @@ begin to intersect at node c1.
  */
 var getIntersectionNode = function(headA, headB) {
     let intersection = null;
-    
+
     if (headA === null || headB === null) return intersection;
-    
+
     let set = new Set();
     while(headA) {
         set.add(headA.val);
@@ -56,8 +49,8 @@ var getIntersectionNode = function(headA, headB) {
         }
         headB = headB.next;
     }
-    
-    
+
+
     return intersection;
 };
 ```
@@ -92,7 +85,7 @@ var getIntersectionNode = function(headA, headB) {
 var getIntersectionNode = function(headA, headB) {
     // base case
     if (headA === null || headB === null) return null;
-    
+
     let pA = headA;
     let pB = headB;
     let prevA = null;
@@ -101,31 +94,32 @@ var getIntersectionNode = function(headA, headB) {
         if (pA === null) {
             pA = headB;
         }
-        
+
         if (pB === null) {
             pB = headA;
         }
+        
         if (pA.next === null) {
             prevA = pA;
         }
         if (pB.next === null) {
             prevB = pB;
         }
-        
+        // check last node val is not matching then there is no intersection
         if (prevA !== null && prevB !== null && prevA.val !== prevB.val) {
             return null;
         }
-        
+
         if (pA.val === pB.val) {
             return pA;
         }
-        
-        
+
+
         pA = pA.next;
         pB = pB.next;
     }
-    
-    
+
+
 };
 ```
 
