@@ -2,8 +2,6 @@ Write a function to delete a node \(except the tail\) in a singly linked list, g
 
 Supposed the linked list is`1 -> 2 -> 3 -> 4`and you are given the third node with value`3`, the linked list should become`1 -> 2 -> 4`after calling your function.
 
-
-
 ```js
 /**
  * Definition for singly-linked list.
@@ -20,6 +18,32 @@ var deleteNode = function(node) {
     node.val = node.next.val;
     node.next = node.next.next;
 };
+```
+
+```java
+/**
+ * Definition for ListNode.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int val) {
+ *         this.val = val;
+ *         this.next = null;
+ *     }
+ * }
+ */
+
+
+public class Solution {
+    /*
+     * @param node: the node in the list should be deletedt
+     * @return: nothing
+     */
+    public void deleteNode(ListNode node) {
+        node.val = node.next.val;
+        node.next = node.next.next;
+    }
+}
 ```
 
 
