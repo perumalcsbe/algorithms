@@ -15,12 +15,11 @@ var isValid = function(s) {
     var closeBraceList = [')', '}', ']'];
     for(var i = 0 ; i < s.length; i++) {
         // check if its open brace
-        var index = openBraceList.indexOf(s[i]); // [ (
-        var cIndex = closeBraceList.indexOf(s[i]); // ) ]
+        var index = openBraceList.indexOf(s[i]);
+        var cIndex = closeBraceList.indexOf(s[i]);
         if (index > -1) {
-            expected.push(closeBraceList[index]); //]
-        }
-        else if (cIndex > -1 && expected.length > 0) {
+            expected.push(closeBraceList[index]);
+        } else if (cIndex > -1 && expected.length > 0) {
             if (s[i] !== expected.pop()) { 
                 return false;
             }
@@ -31,6 +30,33 @@ var isValid = function(s) {
 
     return expected.length === 0;
 };
+```
+
+```java
+public class Solution {
+    /*
+     * @param s: A string
+     * @return: whether the string is a valid parentheses
+     */
+    public boolean isValidParentheses(String s) {
+        Map<Character, Character> dict = new HashMap<>();
+        dict.put('(', ')');
+        dict.put('[', ']');
+        dict.put('{', '}');
+        Stack<Character> stack = new Stack<>();
+        
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (dict.containsKey(c)) {
+                stack.push(dict.get(c));
+            } else if (stack.isEmpty() || stack.pop() != c) {
+                return false;
+            }
+        }
+        
+        return stack.isEmpty();
+    }
+}
 ```
 
 
