@@ -1,4 +1,4 @@
-```
+```js
 function permute(prefix, suffix, result) {
   if (suffix.length === 0) {
     result.push(prefix);
@@ -16,8 +16,6 @@ function permuation(str) {
   permute('', str, result);
   return result;
 }
-
-
 ```
 
 
