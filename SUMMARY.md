@@ -28,6 +28,7 @@
   * [Merge Two Sorted Arrays](arrays/merge-two-sorted-arrays.md)
   * [Merge Sorted Array](arrays/merge-sorted-array.md)
   * [Two Sum](arrays/two-sum.md)
+  * [Sort Colors](arrays/sort-colors.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)
