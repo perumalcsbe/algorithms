@@ -35,6 +35,7 @@
   * [Permutation](strings/permutation.md)
   * [Permutation in String](strings/permutation-in-string.md)
   * [String Permutation](strings/string-permutation.md)
+  * [Two Strings Are Anagrams](strings/two-strings-are-anagrams.md)
 * [Two Pointers](two-pointers.md)
 * [Backtracking](back-tracking.md)
 * [Stack](stack.md)
