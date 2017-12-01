@@ -13,13 +13,13 @@ public class Solution {
      */
     public boolean Permutation(String A, String B) {
         if (A.length() != B.length()) return false;
-        
+
         Map<Character, Integer> map = new HashMap<>();
-        
+
         for(Character ch : A.toCharArray()) {
             map.put(ch, map.getOrDefault(ch, 0) + 1);
         }
-        
+
         for(Character ch : B.toCharArray()) {
             if (map.containsKey(ch)) {
                 int c = map.get(ch);
@@ -30,7 +30,7 @@ public class Solution {
                 }
             }
         }
-        
+
         return map.size() == 0;
     }
 }
