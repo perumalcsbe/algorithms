@@ -1,11 +1,10 @@
 Write a method`anagram(s,t)`to decide if two strings are anagrams or not.
 
-
-
 **Clarification**
 
-What is**Anagram**?  
-- Two strings are anagram if they can be the same after change the order of characters.
+What is**Anagram**?
+
+* Two strings are anagram if they can be the same after change the order of characters.
 
 **Example**
 
@@ -13,13 +12,9 @@ Given s =`"abcd"`, t =`"dcab"`, return`true`.
 Given s =`"ab"`, t =`"ab"`, return`true`.  
 Given s =`"ab"`, t =`"ac"`, return`false`.
 
-
-
 [**Challenge**](http://www.lintcode.com/en/problem/two-strings-are-anagrams/#challenge)
 
 O\(n\) time, O\(1\) extra space
-
-
 
 ```java
 public class Solution {
