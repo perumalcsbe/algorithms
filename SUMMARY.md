@@ -29,6 +29,7 @@
   * [Merge Sorted Array](arrays/merge-sorted-array.md)
   * [Two Sum](arrays/two-sum.md)
   * [Sort Colors](arrays/sort-colors.md)
+  * [Partition Array](arrays/partition-array.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)

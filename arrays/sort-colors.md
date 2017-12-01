@@ -1,4 +1,4 @@
-Given an array with_n_objects colored_red_,_white_or_blue_, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.
+Given an array with_n\_objects colored\_red_,_white\_or\_blue_, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.
 
 Here, we will use the integers`0`,`1`, and`2`to represent the color red, white, and blue respectively.
 
@@ -17,8 +17,6 @@ Given`[1, 0, 1, 2]`, sort it in-place to`[0, 1, 1, 2]`.
   * count 0s, 1s & 2s 
 * run a loop from 0 to counts
   * assign array indices  with corresponding counts 0, 1, & 2 
-
-
 
 [**Challenge**](http://www.lintcode.com/en/problem/sort-colors/#challenge)
 
@@ -43,7 +41,7 @@ public class Solution {
      */
     public void sortColors(int[] nums) {
         if (nums == null || nums.length < 2) return;
-        
+
         int red = 0;
         int blue = nums.length - 1;
         int i = 0;
@@ -60,7 +58,7 @@ public class Solution {
             }
         }
     }
-    
+
     private void swap(int[] nums, int i, int j) {
         int temp = nums[i];
         nums[i] = nums[j];
