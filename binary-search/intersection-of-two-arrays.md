@@ -22,14 +22,14 @@ function intersection(nums1, nums2) {
             }
         }
     }
-    
+
     return Array.from(result);
 }
 ```
 
 ```
 Run Time Complexity: O(n^2)
-Auxiliary Space: O(1) 
+Auxiliary Space: O(1)
 ```
 
 ##### Approach 2: Using Set
@@ -43,7 +43,7 @@ function intersection(nums1, nums2) {
              result.add(nums2[i]);
          }   
     }
-    
+
     return Array.from(result);
 }
 ```
@@ -51,6 +51,37 @@ function intersection(nums1, nums2) {
 ```
 Time Complexity: O(n)
 Space Complexity: O(P) where P is Length of any one of the Array
+```
+
+```java
+public class Solution {
+    
+    /*
+     * @param nums1: an integer array
+     * @param nums2: an integer array
+     * @return: an integer array
+     */
+    public int[] intersection(int[] nums1, int[] nums2) {
+        int[] noRes = new int[0];
+        if (nums1.length < 1 || nums2.length < 1) return noRes;
+         
+        Set<Integer> set = new HashSet<>();
+        HashSet<Integer> resultSet = new HashSet<>();
+        for (int i = 0; i < nums1.length; i++) {
+            set.add(nums1[i]);
+        }
+        
+        for (int i = 0; i < nums2.length; i++) {
+            if (set.contains(nums2[i])) {
+                resultSet.add(nums2[i]);
+            }
+        }
+        int[] result = new int[resultSet.size()];
+        int i = 0;
+        for (Integer val : resultSet) result[i++] = val;
+        return result;
+    }
+}; 
 ```
 
 

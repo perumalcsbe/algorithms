@@ -22,12 +22,12 @@ Givennums1=`[1, 2, 2, 1]`,nums2=`[2, 2]`, return`[2, 2]`.
 function intersection(nums1, nums2) {
     let map = new Map();
     let result = [];
-    
+
     for (let n of nums1) {
         let count = map.get(n) || 0;
         map.set(n, ++count);
     }
-    
+
     for (let n of nums2) {
         if (map.has(n)) {
             // delete mapped values
@@ -39,9 +39,52 @@ function intersection(nums1, nums2) {
             result.push(n);
         }
     }
-    
+
     return result;
 }
+```
+
+```java
+public class Solution {
+    
+    /*
+     * @param nums1: an integer array
+     * @param nums2: an integer array
+     * @return: an integer array
+     */
+    public int[] intersection(int[] nums1, int[] nums2) {
+        int[] noRes = new int[0];
+        
+        if (nums1.length < 1 || nums2.length < 1) return noRes;
+        
+        Map<Integer, Integer> map = new HashMap<>();
+        
+        List<Integer> list = new ArrayList<>();
+        
+        for (int i = 0; i < nums1.length; i++) {
+            map.put(nums1[i], 1 + map.getOrDefault(nums1[i], 0));
+        }
+        
+        for (int i = 0; i < nums2.length; i++) {
+            if (map.containsKey(nums2[i])) {
+                list.add(nums2[i]);
+                // delete mapped values
+                if (map.get(nums2[i]) > 1) {
+                    map.put(nums2[i], map.get(nums2[i]) - 1);
+                } else {
+                    map.remove(nums2[i]);
+                }
+            }
+        }
+        
+        int[] result = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            result[i] = list.get(i);
+        }
+        
+        return result;
+    }
+};
 ```
 
 
