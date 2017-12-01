@@ -34,6 +34,7 @@
   * [Unique Characters](strings/unique-characters.md)
   * [Permutation](strings/permutation.md)
   * [Permutation in String](strings/permutation-in-string.md)
+  * [String Permutation](strings/string-permutation.md)
 * [Two Pointers](two-pointers.md)
 * [Backtracking](back-tracking.md)
 * [Stack](stack.md)
