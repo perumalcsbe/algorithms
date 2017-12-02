@@ -67,6 +67,7 @@
   * [Linked List Cycle](linked-list-cycle.md)
   * [Linked List Cycle II](linked-list-cycle-ii.md)
   * [Remove Nth Node From End of List](remove-nth-node-from-end-of-list.md)
+  * [Count Linked List Nodes](count-linked-list-nodes.md)
 * Math
   * [Palindrome Number](palindrome-number.md)
   * [A + B Problem](a-+-b-problem.md)
