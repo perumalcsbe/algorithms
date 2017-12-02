@@ -30,6 +30,8 @@
   * [Two Sum](arrays/two-sum.md)
   * [Sort Colors](arrays/sort-colors.md)
   * [Partition Array](arrays/partition-array.md)
+  * [Search Insert Position](arrays/search-insert-position.md)
+  * [Search in Rotated Sorted Array](arrays/search-in-rotated-sorted-array.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)
@@ -69,6 +71,7 @@
   * [Palindrome Number](palindrome-number.md)
   * [A + B Problem](a-+-b-problem.md)
   * [Calculate Maximum Value](calculate-maximum-value.md)
-* Basic
+* [Basic](basic.md)
   * [Fizz Buzz](fizz-buzz.md)
+  * [Rectangle Area](rectangle-area.md)
 
