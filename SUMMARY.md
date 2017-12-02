@@ -68,6 +68,7 @@
 * Math
   * [Palindrome Number](palindrome-number.md)
   * [A + B Problem](a-+-b-problem.md)
+  * [Calculate Maximum Value](calculate-maximum-value.md)
 * Basic
   * [Fizz Buzz](fizz-buzz.md)
 
