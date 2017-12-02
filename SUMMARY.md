@@ -75,4 +75,7 @@
   * [Fizz Buzz](fizz-buzz.md)
   * [Rectangle Area](rectangle-area.md)
   * [Sort Integers](sort-integers.md)
+* [Merge](merge.md)
+  * [Merge Intervals](merge/merge-intervals.md)
+  * [Insert Interval](merge/insert-interval.md)
 
