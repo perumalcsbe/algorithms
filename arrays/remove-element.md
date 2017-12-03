@@ -70,19 +70,19 @@ public class Solution {
         int i = 0;
         int c = A.length - 1;
         while (i < c) {
-        
+
             if (A[i] == elem) {
-                
+
                 while (c >= i  && A[c] == elem) {
                     c--;
                 }
-                
+
                 if (c >= i  && A[c] != elem) {
                     A[i] = A[c];
                      A[c] = elem;
                     c--;
                 }
-        
+
             }
             i++;
         }
