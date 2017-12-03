@@ -58,5 +58,39 @@ function removeElement(nums, val) {
 }
 ```
 
+```java
+public class Solution {
+    /*
+     * @param A: A list of integers
+     * @param elem: An integer
+     * @return: The new length after remove
+     */
+    public int removeElement(int[] A, int elem) {
+        if (A == null || A.length < 1) return 0;
+        int i = 0;
+        int c = A.length - 1;
+        while (i < c) {
+        
+            if (A[i] == elem) {
+                
+                while (c >= i  && A[c] == elem) {
+                    c--;
+                }
+                
+                if (c >= i  && A[c] != elem) {
+                    A[i] = A[c];
+                     A[c] = elem;
+                    c--;
+                }
+        
+            }
+            i++;
+        }
+        return c + 1;
+    }
+
+}
+```
+
 
 

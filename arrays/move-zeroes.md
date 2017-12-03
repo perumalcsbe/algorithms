@@ -19,10 +19,10 @@ public class Solution {
         if (nums == null || nums.length < 2) return;
         int i = 0;
         while (i < nums.length - 1) {
-            
+
             if (nums[i] == 0) {
-               
-            
+
+
                 int j = i + 1;
                 while (j < nums.length && nums[j] == 0) {
                     j++;
@@ -30,12 +30,12 @@ public class Solution {
                 if (j < nums.length && nums[j] != 0) {
                     swap(nums, i , j);
                 }
-                
+
             }
              i++;
         }
     }
-    
+
     private void swap(int[] nums, int i, int j) {
         int t = nums[i];
         nums[i] = nums[j];

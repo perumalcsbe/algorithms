@@ -32,6 +32,7 @@
   * [Partition Array](arrays/partition-array.md)
   * [Search Insert Position](arrays/search-insert-position.md)
   * [Search in Rotated Sorted Array](arrays/search-in-rotated-sorted-array.md)
+  * [Remove Element](arrays/remove-element.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)
