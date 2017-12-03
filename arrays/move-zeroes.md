@@ -9,6 +9,41 @@ For example, given`nums = [0, 1, 0, 3, 12]`, after calling your function,`nums`s
 
 ##### Approach 1: [Two Pointers](/two-pointers.md)
 
+```java
+public class Solution {
+    /*
+     * @param nums: an integer array
+     * @return: 
+     */
+    public void moveZeroes(int[] nums) {
+        if (nums == null || nums.length < 2) return;
+        int i = 0;
+        while (i < nums.length - 1) {
+            
+            if (nums[i] == 0) {
+               
+            
+                int j = i + 1;
+                while (j < nums.length && nums[j] == 0) {
+                    j++;
+                }
+                if (j < nums.length && nums[j] != 0) {
+                    swap(nums, i , j);
+                }
+                
+            }
+             i++;
+        }
+    }
+    
+    private void swap(int[] nums, int i, int j) {
+        int t = nums[i];
+        nums[i] = nums[j];
+        nums[j] = t;
+    }
+}
+```
+
 ```js
 /**
  * @param {number[]} nums
