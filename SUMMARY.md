@@ -42,6 +42,7 @@
   * [String Permutation](strings/string-permutation.md)
   * [Two Strings Are Anagrams](strings/two-strings-are-anagrams.md)
   * [Reverse Words in a String](strings/reverse-words-in-a-string.md)
+  * [Missing String ](strings/missing-string.md)
 * [Two Pointers](two-pointers.md)
 * [Backtracking](back-tracking.md)
 * [Stack](stack.md)
