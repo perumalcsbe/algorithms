@@ -84,4 +84,6 @@
   * [Merge Intervals](merge/merge-intervals.md)
   * [Insert Interval](merge/insert-interval.md)
 * [Priority Queue](priority-queue.md)
+* Dynamic Programming
+  * [Longest Common Subsequence](longest-common-subsequence.md)
 

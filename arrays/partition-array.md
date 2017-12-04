@@ -1,15 +1,15 @@
 Given an array`nums`of integers and an int`k`, partition the array \(i.e move the elements in "nums"\) such that:
 
-* All elements &lt; _k _are moved to the _left_
-* All elements &gt;= _k _are moved to the _right_
+* All elements &lt; _k \_are moved to the \_left_
+* All elements &gt;= _k \_are moved to the \_right_
 
-Return the partitioning index, i.e the first index_i_nums\[_i_\] &gt;=_k_.
+Return the partitioning index, i.e the first index_i\_nums\[\_i_\] &gt;=_k_.
 
 ##### Notice
 
-You should do really partition in array_nums_instead of just counting the numbers of integers smaller than k.
+You should do really partition in array\_nums\_instead of just counting the numbers of integers smaller than k.
 
-If all elements in_nums_are smaller than_k_, then return _nums.length_
+If all elements in_nums\_are smaller than\_k_, then return _nums.length_
 
 **Example**
 
@@ -20,8 +20,6 @@ If nums =`[3,2,2,1]`and`k=2`, a valid answer is`1`.
 Can you partition the array in-place and in O\(n\)?
 
 ##### Approach: Two Pointers
-
-
 
 ```
 public class Solution {
@@ -48,10 +46,10 @@ public class Solution {
                 i++;
             }
         }
-        
+
         return left;
     }
-    
+
     private void swap(int[] nums, int i, int j) {
         int temp = nums[i];
         nums[i] = nums[j];
