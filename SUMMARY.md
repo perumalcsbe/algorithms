@@ -87,4 +87,5 @@
 * [Priority Queue](priority-queue.md)
 * Dynamic Programming
   * [Longest Common Subsequence](longest-common-subsequence.md)
+  * [Longest Increasing Subsequence](longest-increasing-subsequence.md)
 
