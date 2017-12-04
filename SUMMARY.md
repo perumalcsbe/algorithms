@@ -32,6 +32,8 @@
   * [Partition Array](arrays/partition-array.md)
   * [Search Insert Position](arrays/search-insert-position.md)
   * [Search in Rotated Sorted Array](arrays/search-in-rotated-sorted-array.md)
+  * [Third Maximum Number](arrays/third-maximum-number.md)
+  * [Kth Largest Element in an Array](arrays/kth-largest-element-in-an-array.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)
@@ -81,4 +83,5 @@
 * [Merge](merge.md)
   * [Merge Intervals](merge/merge-intervals.md)
   * [Insert Interval](merge/insert-interval.md)
+* [Priority Queue](priority-queue.md)
 
