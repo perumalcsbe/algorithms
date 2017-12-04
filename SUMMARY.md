@@ -84,7 +84,8 @@
   * [Fizz Buzz](fizz-buzz.md)
   * [Rectangle Area](rectangle-area.md)
   * [Sort Integers](sort-integers.md)
-* Dynamic Programming
+* [Dynamic Programming](dynamic-programming.md)
   * [Longest Common Subsequence](longest-common-subsequence.md)
   * [Longest Increasing Subsequence](longest-increasing-subsequence.md)
+  * [Longest Common Substring](longest-common-substring.md)
 
