@@ -26,6 +26,7 @@
   * [Median of Two Sorted Arrays](arrays/median-of-two-sorted-arrays.md)
   * [Majority Number](arrays/majority-number.md)
   * [Majority Number II](arrays/majority-number-ii.md)
+  * [Majority Number III](arrays/majority-number-iii.md)
   * [Find Peak Element](arrays/find-peak-element.md)
   * [Partition Array by Odd and Even](arrays/partition-array-by-odd-and-even.md)
   * [Merge Two Sorted Arrays](arrays/merge-two-sorted-arrays.md)
