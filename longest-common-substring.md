@@ -32,27 +32,26 @@ public class Solution {
         }
         int m = A.length();
         int n = B.length();
-        
         int[][] dp = new int[m + 1][n + 1];
-
+        
         // filling dp with bottom up fashion
         for (int i = 0; i <= m; i++) {
             for (int j = 0; j <= n; j++) {
-
+                
                 // base case for first row or first coloumn fill with 0
                 if (i == 0 || j == 0) {
                     dp[i][j] = 0;
-                } else if (A[i - 1] == B[j - 1]) {
+                } else if (A.charAt(i - 1) == B.charAt(j - 1)) {
                     dp[i][j] = dp[i - 1][j - 1] + 1;
                     result = Math.max(result, dp[i][j]);
                 } else {
                     dp[i][j] = 0;
                 }
-
+                
             }
         }
-
-
+        
+        
         return result;
     }
 }
