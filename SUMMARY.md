@@ -88,4 +88,6 @@
   * [Longest Common Subsequence](longest-common-subsequence.md)
   * [Longest Increasing Subsequence](longest-increasing-subsequence.md)
   * [Longest Common Substring](longest-common-substring.md)
+  * [Unique Paths](unique-paths.md)
+  * [Unique Paths II](unique-paths-ii.md)
 
