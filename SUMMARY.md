@@ -90,4 +90,6 @@
   * [Longest Common Substring](longest-common-substring.md)
   * [Unique Paths](unique-paths.md)
   * [Unique Paths II](unique-paths-ii.md)
+  * [Climbing Stairs](climbing-stairs.md)
+  * [House Robber](house-robber.md)
 

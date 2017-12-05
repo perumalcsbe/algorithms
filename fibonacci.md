@@ -53,8 +53,8 @@ public class Solution {
         for (int i = 2; i <= n; i++) {
             cache[i] = cache[i - 1] + cache[i - 2];
         }
-        
-        
+
+
         return cache[n - 1];
     }
 }
@@ -80,8 +80,8 @@ public class Solution {
             a = b;
             b = c;
         }
-        
-        
+
+
         return b;
     }
 }
