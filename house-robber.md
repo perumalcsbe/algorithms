@@ -17,16 +17,16 @@ public class Solution {
     public long houseRobber(int[] A) {
         // base case
         if (A == null || A.length < 1) return 0;
-        
+
         int n = A.length;
         long[] dp = new long[n + 1];
         dp[0] = 0;
         dp[1] = A[0];
-        
+
         for (int i = 2; i <= n; i++) {
             dp[i] = Math.max(dp[i - 1], A[i-1] + dp [i - 2]);
         }
-        
+
         return dp[n];
     }
 }
@@ -45,18 +45,18 @@ public class Solution {
     public long houseRobber(int[] A) {
         // base case
         if (A == null || A.length < 1) return 0;
-        
+
         int n = A.length;
         long a = 0; // n-2
         long b = A[0]; // n -1
         long c = A[0]; // if array has 1 element
-        
+
         for (int i = 2; i <= n; i++) {
             c = Math.max(b, A[i - 1] + a);
             a = b;
             b = c;
         }
-        
+
         return c;
     }
 }
