@@ -6,8 +6,6 @@ Givennums=`[0, 1, 3]`return`2`.
 **Note**:  
 Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?
 
-
-
 ##### Approach 1: Boolean Array
 
 ```js
@@ -25,14 +23,43 @@ var missingNumber = function(nums) {
             return i;
         }
     }
-    
+
     return -1;
-}; 
+};
 ```
 
 ```
 Time Complexity: O(n)
 Space Complexity: O(n)?
+```
+
+**Approach: XOR**
+
+```java
+public class Solution {
+    /*
+     * @param nums: An array of integers
+     * @return: An integer
+     */
+    public int findMissing(int[] nums) {
+       if (nums == null || nums.length < 1) {
+           return 0;
+       }
+       
+       int n = nums.length;
+       int missing = 0;
+       
+       for (int i = 0; i <= n; i++) {
+           missing ^= i;
+       }
+       
+       for (int num : nums) {
+           missing ^= num;
+       }
+       
+       return missing;
+    }
+};
 ```
 
 
