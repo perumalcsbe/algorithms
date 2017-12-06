@@ -6,7 +6,12 @@ Given s =`"lintcode"`, return`0`.
 
 Given s =`"lovelintcode"`, return`2`.
 
-**Approach: Two Loops O\(n^2\)**
+**Approach: Two Loops **
+
+```
+Run time complexity: O(n^2)
+Space complexity: O(1)
+```
 
 ```java
 public class Solution {
@@ -40,13 +45,26 @@ public class Solution {
 }
 ```
 
-**Approach: HashMap**
+**Approach: HashMap **
+
+```
+run time complexity: O(n) 
+space complexity: O(1)
+```
+
+> use hasmp to store index & count, increment count and index if encounter duplicates. finally return lower index for count 1
+
+example: "abcab"
+
+| Character | a | b | c |
+| :--- | :--- | :--- | :--- |
+| Pair&lt;int, int&gt; | index: 3, count: 2 | index: 4, count: 2 | index: 2, count: 1 |
 
 ```java
 public class Solution {
     private class Pair {
         int index, count;
-        
+
         public Pair(int index, int count) {
             this.index = index;
             this.count = count;
@@ -67,7 +85,7 @@ public class Solution {
 
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
-            
+
             if (map.containsKey(ch)) {
                 Pair x = map.get(ch);
                 map.put(ch, new Pair(i, x.count+1));
@@ -75,7 +93,7 @@ public class Solution {
                 map.put(ch, new Pair(i, 1));
             }
         }
-    
+
         int max = Integer.MAX_VALUE;
         for (Map.Entry<Character, Pair> entry : map.entrySet()) {
             Pair x = entry.getValue();
@@ -83,8 +101,8 @@ public class Solution {
                 max = Math.min(max, x.index);
             }
         }
-        
-        
+
+
         return max < Integer.MAX_VALUE ? max : result;
     }
 }
