@@ -96,37 +96,6 @@
   * [Kth Largest Element in an Array](arrays/kth-largest-element-in-an-array.md)
 * [Dynamic Programming](dynamic-programming.md)
   * [longest common subsequence](/longest-common-subsequence.md)
-  * [longest-increasing-subsequence.md](/longest-increasing-subsequence.md "Longest increasing subsequence")
-  * \[Longest Common Subsequence\]\(longest-common-subsequence.md\)
-
-  * \[Longest Increasing Subsequence\]\(longest-increasing-subsequence.md\)
-
-  * \[Longest Common Substring\]\(longest-common-substring.md\)
-
-  
-
-
-    \* \[Unique Paths\]\(unique-paths.md\)
-
-  
-
-
-    \* \[Unique Paths II\]\(unique-paths-ii.md\)
-
-  
-
-
-    \* \[Climbing Stairs\]\(climbing-stairs.md\)
-
-  
-
-
-    \* \[House Robber\]\(house-robber.md\)
-
-  
-
-
-    \* \[House Robber II\]\(house-robber-ii.md\)
 
 
 
