@@ -16,6 +16,8 @@ Could you use three ways to do it.
 2. Sort and binary search
 3. Build Segment Tree and Search.
 
+**Approach: Loop**
+
 ```java
 public class Solution {
     /*
@@ -25,7 +27,7 @@ public class Solution {
      */
     public List<Integer> countOfSmallerNumber(int[] A, int[] queries) {
        List<Integer> result = new ArrayList<>();
-       
+
        for (int q: queries) {
            int s = 0;
            for (int a: A) {
@@ -33,14 +35,14 @@ public class Solution {
                    s++;
                }
            }
-           
+
            result.add(s);
        }
-       
+
        return result;
     }
 }
 ```
 
-
+Approach: Binary search
 
