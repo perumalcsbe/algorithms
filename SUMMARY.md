@@ -94,4 +94,5 @@
 * [Priority Queue](priority-queue.md)
   * Idea
   * [Kth Largest Element in an Array](arrays/kth-largest-element-in-an-array.md)
+* [Dynamic Programming](dynamic-programming.md)
 
