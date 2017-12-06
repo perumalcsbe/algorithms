@@ -104,4 +104,5 @@
   * [longest Increasing subsequence](longest-increasing-subsequence.md)
   * [Longest Increasing Continuous Subsequence](longest-increasing-continuous-subsequence-ii.md)
   * [Longest common substring](longest-common-substring.md)
+  * [Minimum Path Sum](longest-increasing-continuous-subsequence.md)
 
