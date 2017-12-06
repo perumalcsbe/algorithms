@@ -11,7 +11,7 @@ You may assume that each input would have exactly one solution.
 Given nums =`[2, 7, 11, 15]`, target =`9`  
 return`[1, 2]`
 
-Approach: Brute force
+**Approach: Brute force**
 
 ```java
 public class Solution {
@@ -29,22 +29,22 @@ public class Solution {
             if (nums[i] + nums[j] == target) {
                 result[0] = i + 1;
                 result[1] = j + 1;
-                
+
                 return result;
-                
+
             }
             j++;
             }
             i++;
         }
-        
-        
+
+
         return result;
     }
 }
 ```
 
-Approach: Two Pointers
+**Approach: Two Pointers**
 
 ```java
 public class Solution {
@@ -62,7 +62,7 @@ public class Solution {
             if (sum == target) {
                 result[0] = start + 1;
                 result[1] = end + 1;
-                
+
                 return result;
             } else if (sum > target) {
                 end--;
@@ -70,8 +70,8 @@ public class Solution {
                 start++;
             }
         }
-        
-        
+
+
         return result;
     }
 }
