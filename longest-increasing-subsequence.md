@@ -97,37 +97,37 @@ public class Solution {
     public int longestIncreasingSubsequence(int[] nums) {
         // base case
         if (nums == null || nums.length < 1) return 0;
-        
+
         int n = nums.length;
         int[] LIS = new int[n];
-        
+
         LIS[0] = 1; // when array length is 1
-        
+
         // start from second elment from array
         for (int i = 1; i < n; i++) {
-            
+
             // start inner loop from 0 to i-1
             for (int j = 0; j < i; j++) {
                 // check of current element nums[i] > nums[j] and  
                 //LIS[j] < LIS[i] then take LIS[j]  value
-                
+
                 if (nums[i] > nums[j] && LIS[j] > LIS[i]) {
                     LIS[i] = LIS[j];
                 }
             }
-            
+
             // increament the index value
             LIS[i]++;
         }
-        
-        
+
+
         int lis = Integer.MIN_VALUE;
-        
+
         for (int x: LIS) {
             lis = Math.max(lis, x);
         }
-        
-        
+
+
         return lis;
     }
 }

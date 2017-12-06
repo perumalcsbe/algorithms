@@ -5,6 +5,7 @@
   * [HashSet](hashset.md)
   * [Complexity](complexity.md)
   * [JAVA](java.md)
+  * [HashTable](hashtable.md)
 * [Binary Search](binary-search.md)
   * [Search for a Range](binary-search/search-for-a-range.md)
   * [Intersection of Two Arrays II](binary-search/intersection-of-two-arrays-ii.md)
@@ -50,12 +51,12 @@
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)
   * [Valid Palindrome](strings/valid-palindrome.md)
   * [Unique Characters](strings/unique-characters.md)
+  * [First Position Unique Character](strings/first-position-unique-character.md)
   * [Permutation](strings/permutation.md)
   * [Permutation in String](strings/permutation-in-string.md)
   * [String Permutation](strings/string-permutation.md)
   * [Two Strings Are Anagrams](strings/two-strings-are-anagrams.md)
   * [Reverse Words in a String](strings/reverse-words-in-a-string.md)
-  * [Missing String ](strings/missing-string.md)
 * [Two Pointers](two-pointers.md)
 * [Backtracking](back-tracking.md)
 * [Stack](stack.md)
@@ -96,6 +97,7 @@
   * [Kth Largest Element in an Array](arrays/kth-largest-element-in-an-array.md)
 * [Dynamic Programming](dynamic-programming.md)
   * [longest common subsequence](/longest-common-subsequence.md)
-
-
+  * [longest Increasing subsequence](longest-increasing-subsequence.md)
+  * [Longest Increasing Continuous Subsequence](longest-increasing-continuous-subsequence-ii.md)
+  * [Longest common substring](longest-common-substring.md)
 
