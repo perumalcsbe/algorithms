@@ -7,6 +7,7 @@
   * [JAVA](java.md)
   * [HashTable](hashtable.md)
   * [Deque](deque.md)
+  * [Queue](queue.md)
 * [Binary Search](binary-search.md)
   * [Search for a Range](binary-search/search-for-a-range.md)
   * [Intersection of Two Arrays II](binary-search/intersection-of-two-arrays-ii.md)

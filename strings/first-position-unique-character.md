@@ -40,21 +40,55 @@ public class Solution {
 }
 ```
 
-**Approach: **
+**Approach: HashMap**
 
-`lovelintcode`
+```java
+public class Solution {
+    private class Pair {
+        int index, count;
+        
+        public Pair(int index, int count) {
+            this.index = index;
+            this.count = count;
+        }
+    }
+    /*
+     * @param s: a string
+     * @return: it's index
+     */
+    public int firstUniqChar(String s) {
+        int result = -1;
+        // base case
+        if (s == null || s.length() < 1) {
+            return result;
+        }
+        int n = s.length();
+        HashMap<Character, Pair> map = new HashMap<>();
 
-length: 12
-
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| l | o | v | e | l | i | n | t | c | o | d | e |
-
-Dequeue
-
-| first |  |  |  |  |  |  |  |  |  | last |  |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ~~l~~ | ~~o~~ | v | e | l | i | n | t | c | o | d | e |
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+            
+            if (map.containsKey(ch)) {
+                Pair x = map.get(ch);
+                map.put(ch, new Pair(i, x.count+1));
+            } else {
+                map.put(ch, new Pair(i, 1));
+            }
+        }
+    
+        int max = Integer.MAX_VALUE;
+        for (Map.Entry<Character, Pair> entry : map.entrySet()) {
+            Pair x = entry.getValue();
+            if (x.count == 1) {
+                max = Math.min(max, x.index);
+            }
+        }
+        
+        
+        return max < Integer.MAX_VALUE ? max : result;
+    }
+}
+```
 
 
 

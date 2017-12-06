@@ -18,8 +18,6 @@ dequeue.addFirst("item2");
 dequeue.addFirst("item1");
 dequeue.addFirst("item2");
 // output: item1 -> item2
-
-
 ```
 
 ```
