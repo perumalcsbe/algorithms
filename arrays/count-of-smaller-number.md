@@ -44,5 +44,5 @@ public class Solution {
 }
 ```
 
-Approach: Binary search
+**Approach: Binary search**
 
