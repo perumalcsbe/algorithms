@@ -13,6 +13,30 @@ Integer.MAX_VALUE
 char[] a = "test".toCharArray(); // ['t', 'e', 's', 't']
 // length
 a.length; // => 4
+```
+
+Lower & Upper cases
+
+http://www.asciitable.com/ 
+
+```java
+// Lower case
+
+// Using Character 
+Character.isLowerCase('a'); // true
+Character.isLowerCase('A'); // false
+// Using ASCII
+char ch = 'a';
+(ch > 64 ) && (ch < 91); // true
+
+// Upper case
+Character.isUpperCase('B'); // true
+Character.isUpperCase('b'); // false
+
+char ch = 'A';
+(ch > 96 ) && (ch < 123); // true
+
+
 
 ```
 
