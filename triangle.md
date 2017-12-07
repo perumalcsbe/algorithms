@@ -18,11 +18,16 @@ Given the following triangle:
 
 The minimum path sum from top to bottom is 11 \(i.e., 2 + 3 + 5 + 1 = 11\).
 
-**Approach: Recursive**
+**Approach: Recursive **
+
+```
+Time Complexity: O(2^n)
+space Complexity: O(n)
+```
 
 ![](/assets/traingle.png)
 
-> bottom up fashion
+> top down fashion
 
 ```java
 public class Solution {
@@ -62,6 +67,11 @@ public class Solution {
 ```
 
 **Approach: Dynamic Programming**
+
+```
+Time Complexity: O(n)
+Space Complexity: O(n)
+```
 
 | dp\[\] | 0 | 1 | 2 | 3 |
 | :--- | :--- | :--- | :--- | :--- |

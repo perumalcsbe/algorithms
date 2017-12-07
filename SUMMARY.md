@@ -20,6 +20,7 @@
     * [Find A Missing Number](arrays/find-a-missing-number.md)
     * [Find Two Missing Numbers](arrays/find-two-missing-numbers.md)
     * [Find the Missing Number II](arrays/find-the-missing-number-ii.md)
+    * [First Missing Positive ](arrays/first-missing-positive.md)
   * [Remove Element](arrays/remove-element.md)
   * [Single Number](arrays/single-number.md)
     * Idea
@@ -106,4 +107,8 @@
   * [Longest common substring](longest-common-substring.md)
   * [Minimum Path Sum](longest-increasing-continuous-subsequence.md)
   * [Triangle ](triangle.md)
+  * [Edit Distance](edit-distance.md)
+  * [Unique Paths](unique-paths.md)
+  * [Unique Paths II](unique-paths-ii.md)
+  * [Unique Paths III](unique-paths-iii.md)
 
