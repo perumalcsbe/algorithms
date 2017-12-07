@@ -14,7 +14,16 @@ You can only move either down or right at any point in time.
 
 Given the above grid map, return`7`. Because the path 1→3→1→1→1 minimizes the sum.
 
+---
+
+This problem states that, for each path value whether it can be included or excluded in original sum by branching out top or left values. then at the end bubble up to calculate minimal sum path.
+
 **Approach: Recursive **
+
+```
+Time Complexity: O(2^mn) Exponential
+Space Complexity: O(mn)
+```
 
 > bottom up fashion
 
@@ -31,31 +40,51 @@ public class Solution {
         if (grid == null || grid.length < 1 || grid[0].length < 1) {
             return 0;
         }
-        
+
         return minPathSum(grid, 0 , 0, grid.length - 1, grid[0].length - 1);
     }
-    
+
     private int minPathSum(int[][] grid, int i, int j, int m, int n) {
         // base case
         // if we reach end of matrix then return the value
         if (i == m && j == n) {
             return grid[i][j];
         }
-        
+
         // if reached end of coloumn, then go down
         if (i + 1 <= m && j == n) {
             return grid[i][j] + minPathSum(grid, i + 1, j, m, n);
         }
-        
+
         // if reached end of row, then go left
         if (i == m && j + 1 <= n) {
             return grid[i][j] + minPathSum(grid, i, j + 1, m, n);
         }
-        
+
         // some where middle then min of top or left
         return grid[i][j] + Math.min(minPathSum(grid, i, j + 1, m, n), minPathSum(grid, i + 1, j, m, n));
     }
 }
+```
+
+> Can be improved further with memorization 
+>
+> * there are high posibillity that, overlapping each path value by visited top or left steps
+> * we can store the calculations in cache and if same path visits then retrieve it from
+
+---
+
+Its clear that, 
+
+* we can see Optimal substructure 
+* overlapping subproblems 
+
+**  
+Approach: Dynamic Programming**
+
+```
+Time Complexity: O(mn)
+Space Complexity: O(mn)
 ```
 
 | m x n | 0 | 1 | 2 |
@@ -65,13 +94,6 @@ public class Solution {
 | 2 | 6 \(t:2 + c:4\) | 8 Min\(t:7+c:2, p:6+c:2\) | 7 Min\(t:6+c:1, p:8+c:1\) |
 
 > TOP down Fashion
-
-**Approach: Dynamic Programming**
-
-```
-Time Complexity: O(mn)
-Space Complexity: O(mn)
-```
 
 ```java
 public class Solution {
