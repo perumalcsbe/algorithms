@@ -20,6 +20,44 @@ Given the above grid map, return`7`. Because the path 1→3→1→1→1 minimize
 
 ![](/assets/minPathSum.png)
 
+```java
+public class Solution {
+    /*
+     * @param grid: a list of lists of integers
+     * @return: An integer, minimizes the sum of all numbers along its path
+     */
+    public int minPathSum(int[][] grid) {
+        // base case
+        if (grid == null || grid.length < 1 || grid[0].length < 1) {
+            return 0;
+        }
+        
+        return minPathSum(grid, 0 , 0, grid.length - 1, grid[0].length - 1);
+    }
+    
+    private int minPathSum(int[][] grid, int i, int j, int m, int n) {
+        // base case
+        // if we reach end of matrix then return the value
+        if (i == m && j == n) {
+            return grid[i][j];
+        }
+        
+        // if reached end of coloumn, then go down
+        if (i + 1 <= m && j == n) {
+            return grid[i][j] + minPathSum(grid, i + 1, j, m, n);
+        }
+        
+        // if reached end of row, then go left
+        if (i == m && j + 1 <= n) {
+            return grid[i][j] + minPathSum(grid, i, j + 1, m, n);
+        }
+        
+        // some where middle then min of top or left
+        return grid[i][j] + Math.min(minPathSum(grid, i, j + 1, m, n), minPathSum(grid, i + 1, j, m, n));
+    }
+}
+```
+
 | m x n | 0 | 1 | 2 |
 | :--- | :--- | :--- | :--- |
 | 0 | 1 \(c:1\) | 4 \(p:1+ c:3\) | 5 \(p:4 + c:1\) |
