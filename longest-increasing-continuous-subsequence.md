@@ -14,13 +14,11 @@ You can only move either down or right at any point in time.
 
 Given the above grid map, return`7`. Because the path 1→3→1→1→1 minimizes the sum.
 
-
-
 **Approach: Recursive **
 
 > bottom up fashion
 
-
+![](/assets/minPathSum.png)
 
 | m x n | 0 | 1 | 2 |
 | :--- | :--- | :--- | :--- |
