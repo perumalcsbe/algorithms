@@ -63,7 +63,12 @@ public class Solution {
 
 **Approach: Dynamic Programming**
 
-
+| dp\[\] | 0 | 1 | 2 | 3 |
+| :--- | :--- | :--- | :--- | :--- |
+| fill bottom row | 4 | 1 | 8 | 3 |
+| i = 2 | 7 min\(t:4,dp\[0+1\]:1\)+6 | 6 min\(1,8\)+5 | 10 min\(8, 3\) +7 |  |
+| i = 1 | 9 min\(7,6\)+3 | 10 min\(6,10\)+4 |  |  |
+| i = 0 | 11 min\(9, 10\)+2 |  |  |  |
 
 ```java
 public class Solution {
@@ -76,22 +81,22 @@ public class Solution {
         if (triangle == null || triangle.length < 1 || triangle[0].length < 1) {
             return 0;
         }
-        
+
         int n = triangle.length;
         int[] dp = new int[n];
-        
+
         // fill with last row
         for (int i = 0; i < n; i++) {
             dp[i] = triangle[n - 1][i];
         }
-        
+
         // start from one above last row
         for (int i = n - 2; i >= 0; i--) {
             for (int j = 0; j <= i; j++) {
                 dp[j] = Math.min(dp[j], dp[j + 1]) + triangle[i][j];
             }
         }
-         
+
         return dp[0];
     }
 ```
