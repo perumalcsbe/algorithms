@@ -12,6 +12,7 @@
   * [Intersection of Two Arrays II](binary-search/intersection-of-two-arrays-ii.md)
   * [Intersection of Two Arrays](binary-search/intersection-of-two-arrays.md)
   * [Guess Number Game ](binary-search/guess-number-game.md)
+  * [First Bad Version](binary-search/first-bad-version.md)
 * [Queue](queue.md)
   * [Implement Queue by Two Stacks](queue/implement-queue-by-two-stacks.md)
 * [Arrays](arrays.md)
