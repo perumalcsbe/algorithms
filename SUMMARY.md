@@ -50,6 +50,7 @@
     * Idea
     * [Two Sum](arrays/two-sum.md)
     * [Two Sum - Input array is sorted ](arrays/two-sum-input-array-is-sorted.md)
+  * [Median](arrays/median.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)
