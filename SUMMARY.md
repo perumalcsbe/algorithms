@@ -116,4 +116,5 @@
   * [Unique Paths II](unique-paths-ii.md)
   * [Unique Paths III](unique-paths-iii.md)
   * [Backpack](backpack.md)
+  * [Decode Ways](decode-ways.md)
 
