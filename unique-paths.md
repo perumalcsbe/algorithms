@@ -13,7 +13,13 @@ How many possible unique paths are there?
 Given m =`3`and n =`3`, return`6`.  
 Given m =`4`and n =`5`, return`35`.
 
-Approach: Dynamic Programming O\(m\*n\)
+**Approach: Dynamic Programming O\(m\*n\)**
+
+| m x n | 0 | 1 | 2 |
+| :--- | :--- | :--- | :--- |
+| 0 | 1 | 1 | 1 |
+| 1 | 1 | 2\(t:1 + l: 1\) | 3 \(t:1 + l:2\) |
+| 2 | 1 | 3\(t:2+l:1\) | 6 \(t:3 + l:3\) |
 
 ```java
 public class Solution {

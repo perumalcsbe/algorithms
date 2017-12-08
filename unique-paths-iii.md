@@ -35,15 +35,24 @@ up(0,0,1)----------->up(0,1,1)-------------->up(0,2,2)-->x
 v            √        v            x          v
 up(1,0,1)----------->up(1,1,2)-------------->up(1,2,3)-->x 
 |                     |                       |
-| x                   | √                     |√
+| √                   | √                     |√
 |                     |                       |
-v                     v             √         v
+v            √        v             √         v
 up(2,0,3)----------->up(2,1,2)-------------->up(2,2,4)-->x
 |                     |                       |
 v                     v                       v
-x                     x                       x 
-
+x                     x                       x
 ```
+
+**Top Down Approach**
+
+* breakdown moves \(left & right\), calculate their sum
+* For every _**k**_th node, _**i** & **j** represents row & column then, calculating path is **k\(i\)**_th value + any one of the below
+* * if left **k\(i, j + 1\)** == bottom _**k\(i+1, j\)**_ then take either left**k\(i, j + 1\)** or right value
+  * if left**k\(i, j + 1\)** != bottom _**k\(i+1, j**_ then take both values
+  * if no left **k\(i, j + 1\)** and has bottom then take bottom _**k\(i+1, j\)**_
+  * if no bottom_**k\(i+1, j\)**_ and has left then take left**k\(i, j + 1\)**
+  * if no left **k\(i, j + 1\)** & bottom _**k\(i+1, j\)**_ then **0**
 
 
 

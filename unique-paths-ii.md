@@ -1,5 +1,3 @@
-
-
 Follow up for "Unique Paths":
 
 Now consider if some obstacles are added to the grids. How many unique paths would there be?
@@ -22,14 +20,11 @@ There is one obstacle in the middle of a 3x3 grid as illustrated below.
   [0,1,0],
   [0,0,0]
 ]
-
 ```
 
 The total number of unique paths is`2`.
 
-
-
-Approach: Dynamic Programming
+**Approach: Dynamic Programming**
 
 ```java
 public class Solution {
@@ -42,18 +37,18 @@ public class Solution {
        if (obstacleGrid == null || obstacleGrid.length == 0 || obstacleGrid[0].length == 0) {
            return 0;
        }
-       
+
        int rows = obstacleGrid.length; // rows
        int cols = obstacleGrid[0].length; // columns
-       
+
        // check frist & last element is 1
        if (obstacleGrid[0][0] == 1 || obstacleGrid[rows - 1][cols - 1] == 1) {
            return 0;
        }
-       
+
        int[][] dp = new int[rows][cols];
        dp[0][0] = 1;
-       
+
         // fill top row
        for (int col = 1; col < cols; col++) {
            if (obstacleGrid[0][col] == 1) {
@@ -62,7 +57,7 @@ public class Solution {
                dp[0][col] = dp[0][col - 1];
            }
        }
-       
+
        // fill left col
        for (int row = 1; row < rows; row++) {
            if (obstacleGrid[row][0] == 1) {
@@ -71,7 +66,7 @@ public class Solution {
                dp[row][0] = dp[row - 1][0];
            }
        }
-       
+
        for (int row = 1; row < rows; row++) {
            for (int col = 1; col < cols; col++) {
                if (obstacleGrid[row][col] == 1) {
@@ -81,7 +76,7 @@ public class Solution {
                }
            }
        }
-       
+
        return dp[rows - 1][cols - 1];
     }
 }

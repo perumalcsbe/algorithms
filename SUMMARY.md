@@ -61,6 +61,7 @@
   * [String Permutation](strings/string-permutation.md)
   * [Two Strings Are Anagrams](strings/two-strings-are-anagrams.md)
   * [Reverse Words in a String](strings/reverse-words-in-a-string.md)
+  * [Rearrange a String With Integers](strings/rearrange-a-string-with-integers.md)
 * [Two Pointers](two-pointers.md)
   * [Sort Letters by Case ](two-pointers/sort-letters-by-case.md)
 * [Backtracking](back-tracking.md)
@@ -111,4 +112,5 @@
   * [Unique Paths](unique-paths.md)
   * [Unique Paths II](unique-paths-ii.md)
   * [Unique Paths III](unique-paths-iii.md)
+  * [Backpack](backpack.md)
 
