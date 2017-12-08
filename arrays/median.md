@@ -16,6 +16,10 @@ O\(n\) time.
 
 **Approach: Naive**
 
+```
+Time Complexity: O(nlogn)
+```
+
 ```java
 public class Solution {
     /*
@@ -25,7 +29,7 @@ public class Solution {
     public int median(int[] nums) {
         Arrays.sort(nums);
         int len = nums.length-1;
-        
+
         return nums[len/2];
     }
 }
