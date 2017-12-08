@@ -5,8 +5,6 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 **Input:**\(2 -&gt; 4 -&gt; 3\) + \(5 -&gt; 6 -&gt; 4\)  
 **Output:**7 -&gt; 0 -&gt; 8
 
-
-
 ![](/assets/addlist.png)
 
 ```js
@@ -54,6 +52,63 @@ var addTwoNumbers = function(l1, l2) {
 
     return resultNode;
 };
+```
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;      
+ *     }
+ * }
+ */
+
+
+public class Solution {
+    /*
+     * @param l1: the first list
+     * @param l2: the second list
+     * @return: the sum list of l1 and l2 
+     */
+    public ListNode addLists(ListNode l1, ListNode l2) {
+        ListNode result = null;
+        ListNode prev = null;
+        int carry = 0;
+        
+        while (l1 != null || l2 != null) {
+            int sum = carry;
+            if (l1 != null) {
+                sum += l1.val;
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                sum += l2.val;
+                l2 = l2.next;
+            }
+            
+            carry = sum/10;
+            sum = sum%10;
+            if (result == null) {
+                result = new ListNode(sum);
+                prev = result;
+            } else {
+                prev.next = new ListNode(sum);
+                prev = prev.next;
+            }
+            
+        }
+        
+        if (carry > 0) {
+            prev.next = new ListNode(carry);
+        }
+        
+        return result;
+    }
+}
 ```
 
 
