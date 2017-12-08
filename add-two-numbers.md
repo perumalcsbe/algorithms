@@ -5,6 +5,10 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 **Input:**\(2 -&gt; 4 -&gt; 3\) + \(5 -&gt; 6 -&gt; 4\)  
 **Output:**7 -&gt; 0 -&gt; 8
 
+
+
+![](/assets/addlist.png)
+
 ```js
 /**
  * Definition for singly-linked list.
