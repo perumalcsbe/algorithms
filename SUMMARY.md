@@ -117,4 +117,5 @@
   * [Unique Paths III](unique-paths-iii.md)
   * [Backpack](backpack.md)
   * [Decode Ways](decode-ways.md)
+  * [Partition Equal Subset Sum](partition-equal-subset-sum.md)
 
