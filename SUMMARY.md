@@ -13,6 +13,7 @@
   * [Intersection of Two Arrays](binary-search/intersection-of-two-arrays.md)
   * [Guess Number Game ](binary-search/guess-number-game.md)
   * [First Bad Version](binary-search/first-bad-version.md)
+  * [First Position of Target](binary-search/first-position-of-target.md)
 * [Queue](queue.md)
   * [Implement Queue by Two Stacks](queue/implement-queue-by-two-stacks.md)
 * [Arrays](arrays.md)
@@ -118,4 +119,6 @@
   * [Backpack](backpack.md)
   * [Decode Ways](decode-ways.md)
   * [Partition Equal Subset Sum](partition-equal-subset-sum.md)
+* [HashMap](hashmap.md)
+  * [Longest Substring Without Repeating Characters](hashmap/longest-substring-without-repeating-characters.md)
 
