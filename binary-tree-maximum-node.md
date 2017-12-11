@@ -14,7 +14,7 @@ Given a binary tree:
 
 return the node with value`3`.
 
-```
+```java
 /**
  * Definition of TreeNode:
  * public class TreeNode {
@@ -35,7 +35,7 @@ public class Solution {
        if (root == null) {
            return null;
        }
-       
+
        Queue<TreeNode> q = new LinkedList<TreeNode>();
        q.add(root);
        int max = Integer.MIN_VALUE;
@@ -49,12 +49,12 @@ public class Solution {
            if (node.left != null) {
                q.add(node.left);
            }
-           
+
            if (node.right != null) {
                q.add(node.right);
            }
        }
-        
+
         return result;
     }
 }
