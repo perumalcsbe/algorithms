@@ -126,6 +126,6 @@
   * [Binary Tree Paths](binary-tree-paths.md)
   * [Binary Tree Maximum Node](binary-tree-maximum-node.md)
 * [Sliding Window](sliding-window.md)
-  * [Sliding Window Unique Elements Sum](sliding-window/sliding-window-unique-elements-sum.md)
+  * Sliding Window Unique Elements Sum
   * [Sliding Window Maximum](sliding-window/sliding-window-maximum.md)
 
