@@ -121,4 +121,6 @@
   * [Partition Equal Subset Sum](partition-equal-subset-sum.md)
 * [HashMap](hashmap.md)
   * [Longest Substring Without Repeating Characters](hashmap/longest-substring-without-repeating-characters.md)
+* Binary Search Tree
+  * [Binary Tree Path Sum ](binary-tree-path-sum.md)
 
