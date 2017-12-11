@@ -13,5 +13,11 @@ Return`5`
 
 
 
+```
+Step1: if quque is empty then add elements to Queue till window size
+
+[[1,2,1],3,3]
+```
+
 
 
