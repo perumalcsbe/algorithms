@@ -123,4 +123,5 @@
   * [Longest Substring Without Repeating Characters](hashmap/longest-substring-without-repeating-characters.md)
 * Binary Search Tree
   * [Binary Tree Path Sum ](binary-tree-path-sum.md)
+  * [Binary Tree Paths](binary-tree-paths.md)
 
