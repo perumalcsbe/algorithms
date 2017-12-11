@@ -13,6 +13,15 @@ Return`5`
 
 ##### Approach: HashMap
 
+![](/assets/slidingwindowunique.png)
+
+* create HashMap to store number and its count
+* traverse array from start to end
+  * remove number or decrement count for every number after window size
+  * add every number and its count to HashMap
+  * whenever start about to reach window size then get unique count from hashmap and add it result 
+* Special case if window size greater than array size then get unique count from hashmap and add it result
+
 ```java
 public class Solution {
     /*
@@ -24,10 +33,10 @@ public class Solution {
         if (nums == null || nums.length < 1) {
             return 0;
         }
-        
+
         int result = 0;
         HashMap<Integer, Integer> map = new HashMap<>();
-        
+
         for (int i = 0; i < nums.length; i++) {
             // for every window limit k - remove first item 
             if (i >= k) {
@@ -52,9 +61,9 @@ public class Solution {
                 }
             }
         }
-        
+
         // case where k > nums.length
-        
+
         if (k > nums.length) {
             for (Map.Entry<Integer, Integer> entry: map.entrySet()) {
                     if (entry.getValue() == 1) {
@@ -62,11 +71,11 @@ public class Solution {
                     }
                 }
         }
-        
+
         return result;
     }
 };
 ```
 
-
+**Approach: Dynamic Programming**
 
