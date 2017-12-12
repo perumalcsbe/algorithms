@@ -39,7 +39,6 @@ Explanation:
 
 Since the character "a" does not repeat, it is not compressed. "bbbbbbbbbbbb" is replaced by "b12".
 Notice each digit has it's own entry in the array.
-
 ```
 
 **Note:**
@@ -47,18 +46,21 @@ Notice each digit has it's own entry in the array.
 1. All characters have an ASCII value in`[35, 126]`
 2. `1 <= len(chars) <= 1000`
 
+**Follow up:**  
+Could you solve it using only O\(1\) extra space?
+
 ```java
 class Solution {
     public int compress(char[] chars) {
         if (chars == null || chars.length < 1) {
             return 0;
         }
-        
+
         StringBuilder res = new StringBuilder();
         int len = chars.length;
         char prev = chars[0];
         int count = 1;
-        char cur = Character.MIN_VALUE;
+        char cur = Character.MIN_VALUE; //to set empty ASCII
         res.append(prev);
         for (int i = 1; i < len; i++) {
             cur = chars[i];
@@ -75,8 +77,9 @@ class Solution {
                 res.append(prev);
                 count = 1;
             }
-            
+
         }
+        // critical step for duplicates in last characters
         if (cur == prev) {
             if (count > 1 && count < 10) {
                 res.append(count);
@@ -85,21 +88,20 @@ class Solution {
                 res.append(count%10);
             }
         }
-        
+
         if (res.length() <= len) {
-            
+
             for (int j = 0; j < res.length(); j++) {
                 chars[j] = res.charAt(j);
             }
-            
+
             return res.length();
         }
-        
+
         return len;
     }
 }
 ```
 
-**Follow up:**  
-Could you solve it using only O\(1\) extra space?
+
 
