@@ -30,7 +30,34 @@ Output: True
 **Approach: BackTracking**
 
 ```
+step1: base case
+      return true if string is empty or string == '*'
+Step2: count open parenthesis 
+        1. excluding *
+        2. including *
+Step3: Recursively call method to remove corresponding close parenthesis
+        1. excluding * if not included 
+        2. including * if excluded               
+```
 
+```java
+class Solution {
+    public boolean checkValidString(String s) {
+        int lo = 0;
+        int hi = 0;
+        for (char ch: s.toCharArray()) {
+            lo += ch == '(' ? 1 : -1;
+            hi += ch != ')' ? 1 : -1;
+            
+            if (hi < 0) {
+                break;
+            }
+            lo = Math.max(lo, 0);
+        }
+        
+        return lo == 0;
+    }
+}
 ```
 
 
