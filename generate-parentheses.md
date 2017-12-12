@@ -12,6 +12,39 @@ For example, givenn= 3, a solution set is:
 ]
 ```
 
+```
+                                dfs('',3,3,list)
+dfs('(',2,3,list)                                
+                                dfs('((',1,3,list)
+                                dfs('(((',0,3,list)
+                                dfs('((()',0,2,list)
+                                dfs('((())',0,1,list)
+                                dfs('((()))',0,0,list)
+dfs('((',1,3,list)
+                                dfs('(()',1,2,list)
+                                dfs('(()(',0,2,list)
+                                dfs('(()()',0,1,list)
+                                dfs('(()())',0,0,list)
+dfs('(()',1,2,list)
+                                dfs('(())',1,1,list)
+                                dfs('(())(',0,1,list)
+                                dfs('(())()',0,0,list)
+dfs('(())',1,1,list)
+                                dfs('(',2,3,list)
+                                dfs('()',2,2,list)
+                                dfs('()(',1,2,list)
+                                dfs('()((',0,2,list)
+                                dfs('()(()',0,1,list)
+                                dfs('()(())',0,0,list)
+dfs('()(',1,2,list)
+                                dfs('()()',1,1,list)
+                                dfs('()()(',0,1,list)
+                                dfs('()()()',0,0,list)
+dfs('()()',1,1,list)
+dfs('()',2,2,list)
+dfs('',3,3,list)
+```
+
 ```js
 /**
  * @param {number} n
@@ -54,27 +87,27 @@ public class Solution {
         if (n < 1) {
             return result;
         }
-        
+
         dfs("", n, n, result);
-        
+
         return result;
     }
-    
+
     private void dfs(String s, int prefix, int suffix, List<String> list) {
         // Base case
         if (prefix > suffix) {
             return;
         }
-        
+
         if (prefix == 0 && suffix == 0) {
             list.add(s);
             return;
         }
-        
+
         if (prefix > 0) {
             dfs(s + "(", prefix-1, suffix, list);
         }
-        
+
         if (suffix > 0) {
             dfs(s + ")", prefix, suffix-1, list);
         }

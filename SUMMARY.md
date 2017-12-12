@@ -66,6 +66,7 @@
   * [Two Strings Are Anagrams](strings/two-strings-are-anagrams.md)
   * [Reverse Words in a String](strings/reverse-words-in-a-string.md)
   * [Rearrange a String With Integers](strings/rearrange-a-string-with-integers.md)
+  * [String Compression](strings/string-compression.md)
 * [Two Pointers](two-pointers.md)
   * [Sort Letters by Case ](two-pointers/sort-letters-by-case.md)
 * [Backtracking](back-tracking.md)
