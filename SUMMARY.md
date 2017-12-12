@@ -128,4 +128,5 @@
 * [Sliding Window](sliding-window.md)
   * [Sliding Window Unique Elements Sum](sliding-window/sliding-window-unique-elements-sum.md)
   * [Sliding Window Maximum](sliding-window/sliding-window-maximum.md)
+  * [Sliding Window Median](sliding-window/sliding-window-median.md)
 
