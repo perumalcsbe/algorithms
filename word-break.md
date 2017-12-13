@@ -97,7 +97,7 @@ for e.g.
     [de]= false
     [e] = false
 
-This will not work for larger text                                                                
+This will not work for larger text
 ```
 
 ```java
@@ -148,7 +148,7 @@ public class Solution {
 
 **Approach: Tabulation \(Dynamic Programming\)**
 
-```
+```java
 public class Solution {
     /*
      * @param s: A string
@@ -156,39 +156,39 @@ public class Solution {
      * @return: A boolean
      */
     public boolean wordBreak(String s, Set<String> dict) {
-        
+
         // base case
         if (s == null || s.length() == 0) {
             return true;
         } 
-        
+
         int n = s.length();
         boolean[] dp = new boolean[n+1]; // by default all values are initialized with false
         dp[0] = true;
-        
+
         /**
          * l      i      n      t     c      o      d      e
          * [0,    1,     2,     3,    4,     5,     6,     7      8]
          * [true, false, false, false, true, false, false, false, true]
          */
-        
+
         for (int i = 0; i < n; i++) {
             // if current substring is true
             if (dp[i]) {
-                
+
                 for (int j = i+1; j <= n; j++) {
                     String w = s.substring(i, j);
                     if (dict.contains(w)) {
                         dp[j] = true;
                     }
                 }
-                
+
             }
         }
-        
-        
+
+
         return dp[n];
-        
+
     }
 }
 ```
