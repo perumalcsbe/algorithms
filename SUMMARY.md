@@ -120,6 +120,7 @@
   * [Backpack](backpack.md)
   * [Decode Ways](decode-ways.md)
   * [Partition Equal Subset Sum](partition-equal-subset-sum.md)
+  * Wildcard Matching
 * [HashMap](hashmap.md)
   * [Longest Substring Without Repeating Characters](hashmap/longest-substring-without-repeating-characters.md)
 * Binary Search Tree
