@@ -30,14 +30,32 @@ Output: True
 **Approach: BackTracking**
 
 ```
-step1: base case
-      return true if string is empty or string == '*'
-Step2: count open parenthesis 
-        1. excluding *
-        2. including *
-Step3: Recursively call method to remove corresponding close parenthesis
-        1. excluding * if not included 
-        2. including * if excluded               
+step1: create low and high counter
+step2: for every character
+        1. increment low if character is '(' open
+        2. decrement low if character is not '(' open in other words ')' close or '*'
+        1. increment high if character is not ')' close in other words '(' open or '*'
+        2. decrement high if character is ')' or '*' close
+        if high below 0 then unbalanced
+        take max of low
+step3: return true if low is 0
+
+e.g. "()"
+step1: low = 0, high = 0
+step2: "()"
+       low = 1
+       high = 1
+               low = 0
+               high = 0              
+ e.g. "(***)"
+         low = 0, high = 0
+         low = 1
+         high = 1
+                 low = 0
+                 high = 2
+                         low = 0 // -1
+                         high = 3
+                                 
 ```
 
 ```java
@@ -48,13 +66,13 @@ class Solution {
         for (char ch: s.toCharArray()) {
             lo += ch == '(' ? 1 : -1;
             hi += ch != ')' ? 1 : -1;
-            
+
             if (hi < 0) {
                 break;
             }
             lo = Math.max(lo, 0);
         }
-        
+
         return lo == 0;
     }
 }

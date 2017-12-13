@@ -10,6 +10,20 @@ Note: The input string may contain letters other than the parentheses`(`and`)`.
 ")("       - [""]
 ```
 
+```
+Approach: greedy
+  skip if char is not ( or )
+  if char is (
+    if next char is not [a-z]
+      include ) and check rest of them are valid
+      exclude ) and check rest of them are valid
+      
+ input "()())()"
+ result ""
+      
+  
+```
+
 ```js
 /**
  * @param {string} s
