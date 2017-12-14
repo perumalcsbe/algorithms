@@ -124,9 +124,11 @@
   * [Partition Equal Subset Sum](partition-equal-subset-sum.md)
   * Wildcard Matching
   * [Word Break](word-break.md)
+  * [Minimum Partition](minimum-partition.md)
 * [HashMap](hashmap.md)
   * [Longest Substring Without Repeating Characters](hashmap/longest-substring-without-repeating-characters.md)
   * [Compare Strings](hashmap/compare-strings.md)
+  * [Concatenated String with Uncommon Characters of Two Strings](hashmap/concatenated-string-with-uncommon-characters-of-two-strings.md)
 * Binary Search Tree
   * [Binary Tree Path Sum ](binary-tree-path-sum.md)
   * [Binary Tree Paths](binary-tree-paths.md)
