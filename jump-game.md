@@ -20,6 +20,43 @@ A =`[2,3,1,1,4]`, return`true`.
 
 A =`[3,2,1,0,4]`, return`false`.
 
+**Approach: Greedy**
+
+```java
+public class Solution {
+    /*
+     * @param A: A list of integers
+     * @return: A boolean
+     */
+    public boolean canJump(int[] A) {
+        if (A == null || A.length < 2) {
+            return true;
+        }
+        
+        int max = A[0];
+        
+        for (int i = 0; i < A.length; i++) {
+            
+            // if not able to move to next
+            if (max <= i && A[i] == 0) {
+                return false;
+            }
+            
+            // update max
+            max = Math.max(i+A[i], max); 
+            
+            // check max reached the end
+            if (max >= A.length-1) {
+                return true;
+            }
+            
+        }
+       
+        return false;
+    }
+}
+```
+
 **Approach: Recursion**
 
 ```
@@ -36,7 +73,21 @@ subproblem:
 **Approach: Dynamic Programming**
 
 ```
-  [0,1,2,3,4] => 4  
+     [2,3,1,1,4]
+ [2] [√,0,0,0,0]
+ [3] [0,√,0,0,0]
+ [1] [0,0,√,0,0]
+ [1] [0,0,0,√,0]
+ [4] [0,0,0,0,√]
+ 
+    [3,2,1,0,4]
+[3] [x,0,0,0,0]
+[2] [0,x,0,0,0]
+[1] [0,0,x,0,0]
+[0] [0,0,0,x,0]
+[4] [0,0,0,0,√]
+               
+[0,1,2,3,4] => 4  
 A [2,3,1,1,4]
 i i + A[i]..i-1 + A[n-1] => true 
 0 0 + 2    => 2
@@ -54,8 +105,7 @@ for (int j = A[i]; j > A[i]-i || 0; j--) {
 -----
 1 1 + 2    => 3
 3 3 + 0    => 3 x 
-}    
-   
+}
 ```
 
 
