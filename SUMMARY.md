@@ -126,6 +126,7 @@
   * [Word Break](word-break.md)
 * [HashMap](hashmap.md)
   * [Longest Substring Without Repeating Characters](hashmap/longest-substring-without-repeating-characters.md)
+  * [Compare Strings](hashmap/compare-strings.md)
 * Binary Search Tree
   * [Binary Tree Path Sum ](binary-tree-path-sum.md)
   * [Binary Tree Paths](binary-tree-paths.md)
