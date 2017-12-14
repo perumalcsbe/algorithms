@@ -29,13 +29,13 @@ public class Solution {
             if (!memo[i]) {
                 HashMap<Character, Integer> mapA = new HashMap<>();
                 addToHash(mapA, strs[i]);
-                
+
                 for (int j = i+1; j < n; j++) {
-                    
+
                     if (!memo[j]) {
                         HashMap<Character, Integer> mapB = new HashMap<>();
                         addToHash(mapB, strs[j]);
-                                
+
                         if (mapA.equals(mapB)) {
                             memo[i] = true;
                             memo[j] = true;
@@ -44,16 +44,16 @@ public class Solution {
                 }
             }
         }
-        
+
         for(int x = 0; x < n; x++) {
             if (memo[x]) {
                 result.add(strs[x]);
             }
         }
-        
+
         return result;
     }
-    
+
     private void addToHash(Map<Character, Integer> map, String w) {
         for (char c : w.toCharArray()) {
             int count = map.getOrDefault(c, 0);
@@ -61,6 +61,17 @@ public class Solution {
         }
     }
 }
+```
+
+```
+["ab", "ba", "cd", "dc", "e"] ["ab", "ba", "cd", "dc"]
+
+    a b c d e f g h i j k l m n o p q r s t u v w x y z
+ab  0 0
+ba  1 1
+cd      1 1
+dc      2 2
+e           1
 ```
 
 
