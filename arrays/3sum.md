@@ -17,6 +17,11 @@ For example, given array S =`{-1 0 1 2 -1 -4}`, A solution set is:
 
 **Approach: Brute Force**
 
+```
+Time Complexity: O(n^3)
+Space Complexity: O(1)
+```
+
 ```java
 public class Solution {
     /*
