@@ -1,4 +1,4 @@
-Given an array_S_of n integers, are there elements_a_,_b_,_c_in_S_such that`a + b + c = 0`? Find all unique triplets in the array which gives the sum of zero.
+Given an array _S of n integers, are there elements a_,_b_,c in S such that`a + b + c = 0`? Find all unique triplets in the array which gives the sum of zero.
 
 ##### Notice
 
@@ -26,12 +26,12 @@ public class Solution {
     public List<List<Integer>> threeSum(int[] numbers) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         List<Integer> item = new ArrayList<Integer>();
-        
+
         // base case
         if (numbers == null || numbers.length < 3) {
             return result;
         }
-        
+
         // sort numbers
         Arrays.sort(numbers);
         //{-4 -1 -1 0 1 2}
@@ -44,7 +44,7 @@ public class Solution {
                 }    
             }
         }
-        
+
         return result;   
     }
 }
