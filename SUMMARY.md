@@ -53,6 +53,7 @@
     * Idea
     * [Two Sum](arrays/two-sum.md)
     * [Two Sum - Input array is sorted ](arrays/two-sum-input-array-is-sorted.md)
+    * [3Sum](arrays/3sum.md)
   * [Median](arrays/median.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
@@ -130,6 +131,8 @@
   * [House Robber ](house-robber.md)
   * [House Robber II](house-robber-ii.md)
   * [Jump Game](jump-game.md)
+  * [Distinct Subsequences](distinct-subsequences.md)
+  * [Cutting a Rod](cutting-a-rod.md)
 * [HashMap](hashmap.md)
   * [Longest Substring Without Repeating Characters](hashmap/longest-substring-without-repeating-characters.md)
   * [Compare Strings](hashmap/compare-strings.md)
