@@ -133,10 +133,12 @@
   * [Jump Game](jump-game.md)
   * [Distinct Subsequences](distinct-subsequences.md)
   * [Cutting a Rod](cutting-a-rod.md)
+  * [Min Cost Climbing Stairs](min-cost-climbing-stairs.md)
 * [HashMap](hashmap.md)
   * [Longest Substring Without Repeating Characters](hashmap/longest-substring-without-repeating-characters.md)
   * [Compare Strings](hashmap/compare-strings.md)
   * [Concatenated String with Uncommon Characters of Two Strings](hashmap/concatenated-string-with-uncommon-characters-of-two-strings.md)
+  * [Shortest Completing Word](hashmap/shortest-completing-word.md)
 * Binary Search Tree
   * [Binary Tree Path Sum ](binary-tree-path-sum.md)
   * [Binary Tree Paths](binary-tree-paths.md)

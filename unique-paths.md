@@ -6,7 +6,7 @@ How many possible unique paths are there?
 
 ##### Notice
 
-\_m \_and \_n \_will be at most 100.
+m  and  n  will be at most 100.
 
 **Example**
 
