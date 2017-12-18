@@ -95,9 +95,53 @@ class Solution {
        }
         // transform original string with arbitrary seperator      
         char[] t = addBoundaries(s.toCharArray());
-        int[] p = new int[t.length];         
+        int[] p = new int[t.length]; 
+        int center = 0;
+        int right = 0;
+        int m = 0; // for left boundary
+        int n = 0; // for right boundary
+        for (int i = 0; i < t.length; i++) {
+          if (i > right) {
+            p[i] = 0;
+            m = i-1;
+            n = i+1;
+          } else {
+            int mirror = center*2-i;
+            if (p[mirror] < (right-i-1)) {
+              p[i] = p[mirror];
+              m = -1;
+            } else {
+              p[i] = right-i;
+              n = right+1;
+              m = i*2-n;
+            }
+        }
+        
+        while (m >= 0 && n < t.length && t[m] == t[n]) {
+          p[i]++;
+          m--;
+          n++;
+        }
+        
+        if ((i+p[i]) > right) {
+          center = i;
+          right = i + p[i];
+        }
+       }
+       
+       // Calculate MAX Length
+       int maxLen = 0;
+       center = 0;
+       for (int i = 0; i< t.length; i++) {
+         if (maxLen < p[i]) {
+           maxLen = P[i];
+           center = i;
+         }
+       }
+       
+                                       
      }
-     
+
      private char[] addBoundaries(char[] s) {
        // base case
        if (s == null || s.length < 1) {
@@ -105,15 +149,15 @@ class Solution {
        }
        int n = s.length;
        char[] t = new char[2*N+1];
-       
+
        for (int i = 0; i < s.length; i += 2) {
           t[i] = '#';
           t[i+1] = s[i];
        }
-       
+
        // add last boundary
        t[t.length-1] = '#';
-       
+
        return t;
      }
      // transform '#a#b#a' => 'aba'
@@ -123,13 +167,13 @@ class Solution {
        if (s == null || s.length < 1) {
          return "".toCharArray();
        }
-       
+
        char[] t = new char[(s.length-1)/2];
-       
+
        for (int i = 0; i < t.length; i++) {
          t[i] = s[i*2+1];
        }
-       
+
        return t;
      }
 ```
@@ -140,9 +184,8 @@ String S = "babad";
 1. preprocessing
        int N = S.length(); // 5
        char[] T = new char[2*N+1]; // #b#a#b#a#d#
-       
-       int[] P = 
-      
+
+       int[] P =
 ```
 
 
