@@ -76,12 +76,26 @@ class Solution {
 
 **Approach: Manacher's algorithm**
 
+```
+                 S: b a b a d
+                 T: # b # a # b # a # d #
+                 P: 0 0 0 0 0 0 0 0 0 0 0
+C = 0;R = 0;    
+i = 0;M = 0; =>  P: 0 0 0 0 0 0 0 0 0 0 0 
+i = 1;M = 1; =>  P: 0 1 0 0 0 0 0 0 0 0 0 
+i = 2:M =         
+```
+
 1. Preprocessing:  Adding boundaries
    1. Create **T array** with twice the length of string **S **plus**1**
    2. Fill the T array with arbitrary character **\# **before and after a character
 2. processing: 
    1. Create **P** array with same length of transformed array **T**
-   2. 
+   2. initialize center & right to 0
+
+   3. traverse T array and fill P from 0..N
+
+   4. 
 3. Post processing: Removing boundaries
    1. Create T array with half the length of previously transformed char array
    2. Fill T array, every i by  i\*2+1 from transformed char array
@@ -116,19 +130,19 @@ class Solution {
               m = i*2-n;
             }
         }
-        
+
         while (m >= 0 && n < t.length && t[m] == t[n]) {
           p[i]++;
           m--;
           n++;
         }
-        
+
         if ((i+p[i]) > right) {
           center = i;
           right = i + p[i];
         }
        }
-       
+
        // Calculate MAX Length
        int maxLen = 0;
        center = 0;
@@ -138,8 +152,9 @@ class Solution {
            center = i;
          }
        }
-       
-                                       
+
+        char[] res = Arrays.copyOfRange(t, center-maxLen, center+maxLen+1);
+        return String.valueOf(removeBoundaries(res));
      }
 
      private char[] addBoundaries(char[] s) {
