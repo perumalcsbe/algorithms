@@ -16,6 +16,19 @@ O\(n\) time without extra memory.
 
 [http://www.lintcode.com/en/problem/valid-palindrome/](http://www.lintcode.com/en/problem/valid-palindrome/)
 
+**Approach: Two Pointers**
+
+```
+1. base case: true { if s is empty
+2. Traverse String from both ends, left & right pointer
+     case1. left++ { if char is not an alphabet
+     case2. right++ { if char is not an alphabet
+     case3. left++ & right++ { if there is a match between left & right characters
+     case4. false { if no match in left & right end characters
+3. true { if above traverse complete       
+      
+```
+
 ```java
     /*
      * @param s: A string
