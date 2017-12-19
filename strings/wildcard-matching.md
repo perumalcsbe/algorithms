@@ -24,6 +24,8 @@ isMatch("aab", "c*a*b") → false
 **Approach: Two Pointers**
 
 ```
+Time Complexity: O(N) Space Complexity: O(1)
+
 i = 0, j=0
 s = "aab" 
 p = "c*a*b"
