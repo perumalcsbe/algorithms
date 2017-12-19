@@ -75,7 +75,7 @@
   * [Making Anagrams](strings/making-anagrams.md)
   * [Rotate Words ](strings/rotate-words.md)
   * [Wildcard Matching](strings/wildcard-matching.md)
-  * Regular Expression Matching
+  * [Regular Expression Matching](strings/regular-expression-matching.md)
 * [Two Pointers](two-pointers.md)
   * [Sort Letters by Case ](two-pointers/sort-letters-by-case.md)
 * [Backtracking](back-tracking.md)
