@@ -30,28 +30,28 @@ Approach: Recursion
  * @return {boolean}
  */
 const isMatch = (s, p) => {
-    
+
     if (s == null || p == null) {
         return false;
     }
-    
+
     let memo = {};
-    
+
     const matchCore = (i, j) => {
         if (s[i] == undefined && p[j] == undefined) {
             return true;
         }
-        
+
         if (s[i] != undefined && p[j] == undefined) {
             return false;
         }
-        
+
         let key = i+'_'+j;
-        
+
         if (memo[key]) {
             return memo[key];
         }
-        
+
         if (p[j+1] === '*') {
             if (s[i] === p[j] || (s[i] != undefined && p[j] === '.')) {
                 memo[key] = matchCore(i+1, j+2) || matchCore(i+1, j) || matchCore(i, j+2);
@@ -61,16 +61,16 @@ const isMatch = (s, p) => {
                 return memo[key];
             }    
         }
-        
+
         if (s[i] === p[j] || (s[i] && p[j] === '.')) {
             memo[key] = matchCore(i+1, j+1);
             return memo[key];
         }
-        
+
         memo[key] = false;
         return memo[key];
     };
-    
+
     return matchCore(0, 0);
 };
 ```
