@@ -73,6 +73,7 @@
   * [Longest Substring Without Repeating Characters ](strings/longest-substring-without-repeating-characters.md)
   * [Longest Common Prefix ](strings/longest-common-prefix.md)
   * [Making Anagrams](strings/making-anagrams.md)
+  * [Rotate Words ](strings/rotate-words.md)
 * [Two Pointers](two-pointers.md)
   * [Sort Letters by Case ](two-pointers/sort-letters-by-case.md)
 * [Backtracking](back-tracking.md)
