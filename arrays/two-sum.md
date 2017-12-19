@@ -46,5 +46,5 @@ public class Solution {
 }
 ```
 
-
+**Approach : Two Pointers**
 
