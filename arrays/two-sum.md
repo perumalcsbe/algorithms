@@ -55,8 +55,8 @@ class Solution {
         for (int i = 0; i < nums.length; i++) {
             int num = nums[i];
             if (map.containsKey(target-num)) {
-                result[0] = i > map.get(target-num) ? map.get(target-num) : i;
-                result[1] = i < map.get(target-num) ? map.get(target-num) : i;
+                result[0] = map.get(target-num);
+                result[1] = i;
                 return result;
             } else {
                 map.put(num, i);
