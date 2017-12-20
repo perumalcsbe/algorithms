@@ -58,9 +58,8 @@ class Solution {
                 result[0] = map.get(target-num);
                 result[1] = i;
                 return result;
-            } else {
-                map.put(num, i);
             }
+            map.put(num, i);
         }
 
         return result;
