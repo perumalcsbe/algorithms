@@ -46,5 +46,27 @@ public class Solution {
 }
 ```
 
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+        Map<Integer, Integer> map = new HashMap<>();
+        
+        for (int i = 0; i < nums.length; i++) {
+            int num = nums[i];
+            if (map.containsKey(target-num)) {
+                result[0] = i > map.get(target-num) ? map.get(target-num) : i;
+                result[1] = i < map.get(target-num) ? map.get(target-num) : i;
+                return result;
+            } else {
+                map.put(num, i);
+            }
+        }
+        
+        return result;
+    }
+}
+```
+
 **Approach : Two Pointers**
 

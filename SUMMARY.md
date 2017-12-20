@@ -24,6 +24,7 @@
     * [Find Two Missing Numbers](arrays/find-two-missing-numbers.md)
     * [Find the Missing Number II](arrays/find-the-missing-number-ii.md)
     * [First Missing Positive ](arrays/first-missing-positive.md)
+    * [Find the missing number in two Arrays](arrays/find-the-missing-number-in-two-arrays.md)
   * [Remove Element](arrays/remove-element.md)
   * [Single Number](arrays/single-number.md)
     * Idea
