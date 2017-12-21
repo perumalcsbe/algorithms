@@ -109,6 +109,7 @@
   * [A + B Problem](a-+-b-problem.md)
   * [Calculate Maximum Value](calculate-maximum-value.md)
   * [Fibonacci ](fibonacci.md)
+  * [Reverse Integer](reverse-integer.md)
 * [Basic](basic.md)
   * [Fizz Buzz](fizz-buzz.md)
   * [Rectangle Area](rectangle-area.md)

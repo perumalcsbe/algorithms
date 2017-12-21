@@ -17,7 +17,7 @@ a.length; // => 4
 
 Lower & Upper cases
 
-http://www.asciitable.com/ 
+[http://www.asciitable.com/](http://www.asciitable.com/)
 
 ```java
 // Lower case
@@ -35,9 +35,20 @@ Character.isUpperCase('b'); // false
 
 char ch = 'A';
 (ch > 96 ) && (ch < 123); // true
+```
+
+Collections
+
+```java
+ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
+List<List<Integer>> res = new LinkedList<>();
+// To add list to list
+res.add(Arrays.asList(item1, item2..itemN));
 
 
 
+//Sorting array
+Arrays.sort(nums);
 ```
 
 
