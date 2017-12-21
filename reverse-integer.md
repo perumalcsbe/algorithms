@@ -27,28 +27,27 @@ Assume we are dealing with an environment which could only hold integers within 
 **Approach: Mod**
 
 ```
-1. if number is negative then convert to positive by -1 * num and set boolean isNegative = true
-2. do mod 10 and store remainder and divide by 10 until 0
-         2.1. if remainder is 0 skip it
-3. add remainder * 10 if > 0   
+0. result = 0;
+1. do num mod 10 and store remainder and divide num by 10 until num is 0
+2. new result = result * 10 + remainder   
+3. overflow case: return 0 if previous value is not matching then overflow occured  (new result - remainder)/10 != res)
 
 for e.g. 123
+res = 0
 num       rem   rev                    
-123%10 => 3      3*10 => 30 
+123%10 => 3      0*10 + 3 => 3 
 123/10    
-12%10  => 2      2*10 => 
+12%10  => 2      3*10 + 2 => 32
 12/10
-1%10   => 1   
+1%10   => 1      32*10 + 1 => 321 
 1/10 => 0 stop
-   
-
 ```
 
 ```java
 class Solution {
     public int reverse(int x) {
         int res = 0;
-        
+
         while (x != 0) {
             int rem = x % 10;
             // overflow check
@@ -56,11 +55,11 @@ class Solution {
             if ((rev-rem) / 10 != res) {
                 return 0;
             }
-            
+
             res = rev;
             x = x / 10;
         }
-        
+
         return res;
     }
 }
