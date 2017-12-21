@@ -158,4 +158,5 @@
   * [Sliding Window Median](sliding-window/sliding-window-median.md)
 * [Algorithms](algorithms.md)
   * [Knuth-Morris-Pratt ](algorithms/knuth-morris-pratt.md)
+  * [Z](algorithms/z.md)
 

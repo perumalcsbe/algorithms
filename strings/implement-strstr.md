@@ -40,6 +40,10 @@ If source =`"abcdabcdefg"`and target =`"bcd"`, return`1`.
 
 O\(n2\) is acceptable. Can you implement an O\(n\) algorithm? \(hint:_KMP_\)
 
+
+
+**Approach: KMP**
+
 ```java
 public class Solution {
     /*
@@ -54,51 +58,51 @@ public class Solution {
         if (source.length() == 0 && target.length() == 0) {
             return 0;
         }
-        
+
         if (target.length() == 0) {
             return 0;
         }
-        
-        
+
+
         int[] lsp = lspTable(target); 
         int j = 0; // for target indicies 
-        
+
         for (int i = 0; i < source.length(); i++) {
             while (j > 0 && source.charAt(i) != target.charAt(j)) {
                 j = lsp[j-1];
             }
-            
+
             if (source.charAt(i) == target.charAt(j)) {
                 j++;
-                
+
                 if (j == target.length()) {
                     return i+1-j;
                 }
             }
         }
-        
+
         return -1;
     }
-    
+
     public int[] lspTable(String target) {
         int[] table = new int[target.length()];
-        
+
         for (int i = 1; i < target.length(); i++) {
             int j = table[i-1]; // previous value
-            
-            
+
+
             while (j > 0 && target.charAt(i) != target.charAt(j)) {
                 j = table[j-1];
             }
-            
+
             if (target.charAt(i) == target.charAt(j)) {
                 j++;
             }
-            
+
             table[i] = j;
         }
-        
-        
+
+
         return table;
     }
 }
