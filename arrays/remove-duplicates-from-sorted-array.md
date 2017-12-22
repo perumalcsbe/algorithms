@@ -13,6 +13,35 @@ It doesn't matter what you leave beyond the new length.
 
 ##### Approach 1: [Two Pointers](/two-pointers.md)
 
+```java
+public class Solution {
+    /*
+     * @param nums: An ineger array
+     * @return: An integer
+     */
+    public int removeDuplicates(int[] nums) {
+        if (nums == null || nums.length < 2) {
+            return nums.length;
+        }
+       int k = 0; // 
+       int i = 1;
+       
+       while (i < nums.length) {
+           
+            if (nums[i] == nums[k]) {
+               i++;
+            } else {
+                k++;
+                nums[k] = nums[i];
+                i++;
+            }
+       }
+       
+       return k+1;
+    }
+}
+```
+
 ```js
 /**
  * @param {number[]} nums
@@ -21,7 +50,7 @@ It doesn't matter what you leave beyond the new length.
 function removeDuplicates(nums) {
     let LEN = nums.length;
     if (LEN < 1) return nums;
-    
+
     for(let i = 0, j = 1; i < j && j < nums.length; j = i + 1) {
         if (nums[i] === nums[j]){
           nums.splice(j, 1);
@@ -29,8 +58,39 @@ function removeDuplicates(nums) {
             i++;
         }
     }
-    
+
     return nums.length;
+}
+```
+
+
+
+**Approach: Unique elements**
+
+this will return unique counts if expectation is only length
+
+```java
+public class Solution {
+    /*
+     * @param nums: An ineger array
+     * @return: An integer
+     */
+    public int removeDuplicates(int[] nums) {
+        if (nums == null || nums.length < 2) {
+            return nums.length;
+        }
+       int k = 0;
+       int i = 0;
+       
+       while (i < nums.length-1) {
+            if (nums[i] == nums[i+1]) {
+               k++;
+            }
+            i++;
+       }
+       
+       return nums.length-k;
+    }
 }
 ```
 
