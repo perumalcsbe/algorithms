@@ -48,8 +48,9 @@
     * Idea
     * [Find All Duplicate Numbers](arrays/find-all-duplicates-numbers.md)
     * [Find the Duplicate Number](arrays/find-the-duplicate-number.md)
+    * [Remove Duplicates from Sorted Array](arrays/remove-duplicates-from-sorted-array.md)
+    * [Remove Duplicates from Sorted Array II](arrays/remove-duplicates-from-sorted-array-ii.md)
   * [Count of Smaller Number](arrays/count-of-smaller-number.md)
-  * [Remove Duplicates from Sorted Array](arrays/remove-duplicates-from-sorted-array.md)
   * [Sum](arrays/sum.md)
     * Idea
     * [Two Sum](arrays/two-sum.md)

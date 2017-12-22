@@ -25,9 +25,9 @@ public class Solution {
         }
        int k = 0; // 
        int i = 1;
-       
+
        while (i < nums.length) {
-           
+
             if (nums[i] == nums[k]) {
                i++;
             } else {
@@ -36,11 +36,13 @@ public class Solution {
                 i++;
             }
        }
-       
+
        return k+1;
     }
 }
 ```
+
+**Approach: Slice in JS**
 
 ```js
 /**
@@ -63,8 +65,6 @@ function removeDuplicates(nums) {
 }
 ```
 
-
-
 **Approach: Unique elements**
 
 this will return unique counts if expectation is only length
@@ -81,14 +81,14 @@ public class Solution {
         }
        int k = 0;
        int i = 0;
-       
+
        while (i < nums.length-1) {
             if (nums[i] == nums[i+1]) {
                k++;
             }
             i++;
        }
-       
+
        return nums.length-k;
     }
 }
