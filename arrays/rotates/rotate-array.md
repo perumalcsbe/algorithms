@@ -99,8 +99,44 @@ e.g.
  step1: [4,3,2,1,5,6,7]
  step2: [4,3,2,1,7,6,5]
  step3: [5,6,7,1,2,3,4]
+```
 
-
+```java
+class Solution {
+    public void rotate(int[] nums, int k) {
+        // base case
+        if (k == 0 || nums.length < 2) {
+            return;
+        }
+        int n = nums.length;
+        
+        // case where k > nums length
+        if (k > n) {
+            k = k%n;
+        }
+        
+        
+        reverse(nums, 0, n-k-1);
+        reverse(nums, n-k, n-1);
+        reverse(nums, 0, n-1);
+    }
+    
+    private void reverse(int[] nums, int i, int j) {
+        // base case
+        if (nums == null || nums.length == 1) {
+            return;
+        }
+        
+        while (i < j) {
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+            j--;
+            i++;
+        }
+        
+    }
+}
 ```
 
 
