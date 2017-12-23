@@ -6,7 +6,6 @@ For example, with n= 7 and k= 3, the array`[1,2,3,4,5,6,7]`is rotated to`[5,6,7,
 
 **Hint: **Could you do it in-place with O\(1\) extra space?
 
-  
 **Approach:  ArrayCopy**
 
 ```
@@ -26,14 +25,14 @@ class Solution {
         if (k == 0 || nums.length < 2) {
             return;
         }
-        
+
         // case where k > nums length
         if (k > nums.length) {
             k = k%nums.length;
         }
         int n = nums.length;
         int[] temp = new int[n];
-        
+
         for (int i = 0; i < k; i++) {
             temp[i] = nums[n-k+i];
         }
@@ -42,10 +41,24 @@ class Solution {
             temp[i] = nums[j];
             j++;
         }
-        
+
         System.arraycopy(temp, 0, nums, 0, n);
     }
 }
+```
+
+**Approach:  Bubble Sort**
+
+```
+A [1,2,3,4,5,6,7] k = 3
+1. Run outer loop of k times
+2. Traverse from end of A and move larger to first
+e.g. 
+ step1: [7,1,2,3,4,5,6]
+ step2: [6,7,1,2,3,4,5]
+ step3: [5,6,7,1,2,3,4]
+
+Time Complexity: O(k*n) Space Complexity: O(1)
 ```
 
 

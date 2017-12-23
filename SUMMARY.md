@@ -59,6 +59,7 @@
   * [Median](arrays/median.md)
   * [Rotates](arrays/rotates.md)
     * [Rotate Array](arrays/rotates/rotate-array.md)
+    * [Recover Rotated Sorted Array](arrays/rotates/recover-rotated-sorted-array.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)
