@@ -57,6 +57,8 @@
     * [Two Sum - Input array is sorted ](arrays/two-sum-input-array-is-sorted.md)
     * [3Sum](arrays/3sum.md)
   * [Median](arrays/median.md)
+  * [Rotates](arrays/rotates.md)
+    * [Rotate Array](arrays/rotates/rotate-array.md)
 * [Strings](strings.md)
   * [Reverse String](strings/reverse-string.md)
   * [Valid Parenthesis String](strings/valid-parenthesis-string.md)
