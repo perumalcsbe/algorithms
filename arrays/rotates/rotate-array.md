@@ -61,5 +61,31 @@ e.g.
 Time Complexity: O(k*n) Space Complexity: O(1)
 ```
 
+```java
+class Solution {
+    public void rotate(int[] nums, int k) {
+        // base case
+        if (k == 0 || nums.length < 2) {
+            return;
+        }
+        int n = nums.length;
+        
+        // case where k > nums length
+        if (k > n) {
+            k = k%n;
+        }
+        
+        
+        for (int i = 0; i < k; i++) {
+            for (int j = nums.length-1; j > 0; j--) {
+                int temp = nums[j];
+                nums[j] = nums[j-1];
+                nums[j-1] = temp;
+            }
+        }
+    }
+}
+```
+
 
 
