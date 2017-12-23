@@ -1,10 +1,12 @@
 Follow up for "Remove Duplicates":  
-What if duplicates are allowed at most twice?
+What if duplicates are allowed at most twice?
 
 For example,  
-Given sorted array A = `[1,1,1,2,2,3]`,
+Given sorted array A = `[1,1,1,2,2,3]`,
 
-Your function should return length = `5`, and A is now `[1,1,2,2,3]`.
+Your function should return length = `5`, and A is now `[1,1,2,2,3]`.
+
+**Approach: Two Pointers**
 
 ```java
 public class Solution {
@@ -19,7 +21,7 @@ public class Solution {
         int prev = 1;
         int cur = 2;
         while (cur < nums.length) {
-           
+
             if (nums[prev] == nums[cur] && nums[prev-1] == nums[cur]) {
                cur++;
             } else {
@@ -28,7 +30,7 @@ public class Solution {
                 cur++;
             }
        }
-       
+
        return prev+1;
     }
 }

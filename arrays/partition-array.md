@@ -21,7 +21,7 @@ Can you partition the array in-place and in O\(n\)?
 
 ##### Approach: Two Pointers
 
-```
+```java
 public class Solution {
     /*
      * @param nums: The integer array you should partition
