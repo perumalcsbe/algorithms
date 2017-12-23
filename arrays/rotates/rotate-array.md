@@ -69,13 +69,13 @@ class Solution {
             return;
         }
         int n = nums.length;
-        
+
         // case where k > nums length
         if (k > n) {
             k = k%n;
         }
-        
-        
+
+
         for (int i = 0; i < k; i++) {
             for (int j = nums.length-1; j > 0; j--) {
                 int temp = nums[j];
@@ -85,6 +85,22 @@ class Solution {
         }
     }
 }
+```
+
+**Approach: Reverse**
+
+```
+A [1,2,3,4,5,6,7] k = 3
+1. reverse A from 0 to n-k
+2. reverse A n-k to n-1
+3. reverse A
+
+e.g. 
+ step1: [4,3,2,1,5,6,7]
+ step2: [4,3,2,1,7,6,5]
+ step3: [5,6,7,1,2,3,4]
+
+
 ```
 
 
