@@ -83,6 +83,7 @@
   * [Wildcard Matching](strings/wildcard-matching.md)
   * [Regular Expression Matching](strings/regular-expression-matching.md)
   * [Implement strStr\(\)](strings/implement-strstr.md)
+  * [Longest Palindromic Substring](strings/longest-palindromic-substring.md)
 * [Two Pointers](two-pointers.md)
   * [Sort Letters by Case ](two-pointers/sort-letters-by-case.md)
 * [Backtracking](back-tracking.md)
