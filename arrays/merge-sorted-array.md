@@ -2,7 +2,7 @@ Given two sorted integer arrays A and B, merge B into A as one sorted array.
 
 ##### Notice
 
-You may assume that A has enough space \(size that is greater or equal to_m_+_n_\) to hold additional elements from B. The number of elements initialized in A and B are \_m \_and \_n \_respectively.
+You may assume that A has enough space \(size that is greater or equal to_m_+_n_\) to hold additional elements from B. The number of elements initialized in A and B are m and n respectively.
 
 **Example**
 
