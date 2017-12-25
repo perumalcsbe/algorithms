@@ -89,7 +89,7 @@ i = 2:M =
 1. Preprocessing:  Adding boundaries
    1. Create **T array** with twice the length of string **S **plus**1**
    2. Fill the T array with arbitrary character **\# **before and after a character
-2. processing:   
+2. processing:  
    1. Create **P** array with same length of transformed array **T**  
    2. initialize center & right to 0
 
@@ -97,15 +97,15 @@ i = 2:M =
 
    2. 
 
-3. Post processing: Removing boundaries
-   1. Create T array with half the length of previously transformed char array
+3. Post processing: Removing boundaries  
+   1. Create T array with half the length of previously transformed char array  
    2. Fill T array, every i by  i\*2+1 from transformed char array
 
 ```java
   class Solution {
      public String longestPalindrome(String s) {
        // base case
-       if (s == null || s.length() <1) {
+       if (s == null || s.length() < 1) {
          return "";
        }
         // transform original string with arbitrary seperator      
@@ -162,16 +162,16 @@ i = 2:M =
        if (s == null || s.length < 1) {
           return "##".toCharArray();
         }
-    
+
         int n = s.length;
         char[] T = new char[2*n + 1];
-    
+
         for (int i = 0, j = 0; j < T.length && i < n; i++, j += 2) {
           T[j] = '#';
           T[j+1] = s[i];       
         }
         T[T.length-1] = '#';
-    
+
         return T;
      }
      // transform '#a#b#a' => 'aba'
