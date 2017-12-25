@@ -119,6 +119,7 @@
   * [Calculate Maximum Value](calculate-maximum-value.md)
   * [Fibonacci ](fibonacci.md)
   * [Reverse Integer](reverse-integer.md)
+  * [Multiples of 3 or 5](multiples-of-3-or-5.md)
 * [Basic](basic.md)
   * [Fizz Buzz](fizz-buzz.md)
   * [Rectangle Area](rectangle-area.md)
