@@ -169,4 +169,6 @@
   * [Knuth-Morris-Pratt ](algorithms/knuth-morris-pratt.md)
   * [Z](algorithms/z.md)
   * [Manacher's algorithm](algorithms/manachers-algorithm.md)
+* Matrix
+  * [Matrix Diagonal](matrix-diagonal.md)
 
