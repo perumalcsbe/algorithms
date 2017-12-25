@@ -51,6 +51,7 @@
     * [Remove Duplicates from Sorted Array](arrays/remove-duplicates-from-sorted-array.md)
     * [Remove Duplicates from Sorted Array II](arrays/remove-duplicates-from-sorted-array-ii.md)
     * [Contains Duplicate II](arrays/contains-duplicate-ii.md)
+    * [Contains Duplicate](arrays/contains-duplicate.md)
   * [Count of Smaller Number](arrays/count-of-smaller-number.md)
   * [Sum](arrays/sum.md)
     * Idea
