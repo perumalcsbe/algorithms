@@ -14,6 +14,8 @@
   * [Guess Number Game ](binary-search/guess-number-game.md)
   * [First Bad Version](binary-search/first-bad-version.md)
   * [First Position of Target](binary-search/first-position-of-target.md)
+  * [Search in Rotated Sorted Array](arrays/search-in-rotated-sorted-array.md)
+  * [Search Insert Position](arrays/search-insert-position.md)
 * [Queue](queue.md)
   * [Implement Queue by Two Stacks](queue/implement-queue-by-two-stacks.md)
 * [Arrays](arrays.md)
@@ -41,8 +43,6 @@
   * [Sort Colors](arrays/sort-colors.md)
   * [Partition Array](arrays/partition-array.md)
   * [Move Zeroes](arrays/move-zeroes.md)
-  * [Search Insert Position](arrays/search-insert-position.md)
-  * [Search in Rotated Sorted Array](arrays/search-in-rotated-sorted-array.md)
   * [Third Maximum Number](arrays/third-maximum-number.md)
   * [Duplicate Numbers](arrays/duplicate-numbers.md)
     * Idea
