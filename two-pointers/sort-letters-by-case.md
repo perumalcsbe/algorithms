@@ -2,7 +2,7 @@ Given a string which contains only letters. Sort it by lower case first and uppe
 
 ##### Notice
 
-It's \_NOT \_necessary to keep the original order of lower-case letters and upper case letters.
+It's  NOT necessary to keep the original order of lower-case letters and upper case letters.
 
 **Example**
 

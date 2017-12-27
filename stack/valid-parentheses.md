@@ -44,7 +44,7 @@ public class Solution {
         dict.put('[', ']');
         dict.put('{', '}');
         Stack<Character> stack = new Stack<>();
-        
+
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (dict.containsKey(c)) {
@@ -53,7 +53,7 @@ public class Solution {
                 return false;
             }
         }
-        
+
         return stack.isEmpty();
     }
 }

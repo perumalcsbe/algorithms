@@ -89,6 +89,7 @@
 * [Two Pointers](two-pointers.md)
   * [Sort Letters by Case ](two-pointers/sort-letters-by-case.md)
 * [Backtracking](back-tracking.md)
+  * [Combinations](back-tracking/combinations.md)
 * [Stack](stack.md)
   * [Valid Parentheses](stack/valid-parentheses.md)
   * [Decode String](stack/decode-string.md)
@@ -126,7 +127,7 @@
   * [Rectangle Area](rectangle-area.md)
   * [Sort Integers](sort-integers.md)
 * [Priority Queue](priority-queue.md)
-  * Idea
+  * [Idea](arrays/idea.md)
   * [Kth Largest Element in an Array](arrays/kth-largest-element-in-an-array.md)
 * [Dynamic Programming](dynamic-programming.md)
   * [longest common subsequence](/longest-common-subsequence.md)
