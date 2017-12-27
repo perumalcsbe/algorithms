@@ -23,21 +23,22 @@ class Solution {
         if (k <= 0 || n < k) {
             return list;
         }
-        
+
         ArrayList<Integer> set = new ArrayList<>();
         dfs(n, k, 1, set, list);
-        
+
         return list;
     }
-    
+
     private void dfs(int n, int k, int start, ArrayList<Integer> set, ArrayList<List<Integer>> list) {
         // base case
         if (set.size() == k) {
             ArrayList<Integer> temp = (ArrayList<Integer>) set.clone();
+            //ArrayList<Integer> temp = new ArrayList<Integer>(set);
             list.add(temp);
             return;
         }
-        
+
         for (int i = start; i <= n; i++) {
             set.add(i);
             dfs(n, k, i+1, set, list);

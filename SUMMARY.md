@@ -90,6 +90,7 @@
   * [Sort Letters by Case ](two-pointers/sort-letters-by-case.md)
 * [Backtracking](back-tracking.md)
   * [Combinations](back-tracking/combinations.md)
+  * [Combination Sum](back-tracking/combination-sum.md)
 * [Stack](stack.md)
   * [Valid Parentheses](stack/valid-parentheses.md)
   * [Decode String](stack/decode-string.md)
