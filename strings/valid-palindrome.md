@@ -25,8 +25,7 @@ O\(n\) time without extra memory.
      case2. right++ { if char is not an alphabet
      case3. left++ & right++ { if there is a match between left & right characters
      case4. false { if no match in left & right end characters
-3. true { if above traverse complete       
-      
+3. true { if above traverse complete
 ```
 
 ```java
@@ -60,6 +59,37 @@ O\(n\) time without extra memory.
 
         return true;
     }
+```
+
+```java
+public class Solution {
+    public int isPalindrome(String A) {
+        int start = 0;
+        int end = A.length() - 1;
+        A = A.toLowerCase();
+        while (start < end) {
+            while(start < end && !Character.isLetter(A.charAt(start)) && !Character.isDigit(A.charAt(start))) {
+                start++;
+            }
+            
+            while(start < end && !Character.isLetter(A.charAt(end)) && !Character.isDigit(A.charAt(end))) {
+                end--;
+            }
+            
+            if (A.charAt(start) != A.charAt(end)) {
+                return 0;
+            } 
+            
+            start++;
+            end--;
+            
+        }
+        
+        return 1;
+        
+    }
+}
+
 ```
 
 
