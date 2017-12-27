@@ -70,7 +70,43 @@ public class Solution {
 }
 ```
 
-```
+```java
+public class Solution {
+    public String longestCommonPrefix(ArrayList<String> A) {
+        StringBuffer lcp = new StringBuffer();
+        if (A == null || A.size() == 0) {
+            return lcp.toString();
+        }
+        
+        int len = getSize(A);
+        
+        for (int i = 0; i < len; i++) {
+            char ch = A.get(0).charAt(i);
+            
+            for (int j = 1; j < A.size(); j++) {
+                if (A.get(j).charAt(i) != ch) {
+                    return lcp.toString();
+                }
+            }
+            
+            lcp.append(ch);
+        }
+        
+        return lcp.toString();
+    }
+    
+    private int getSize(ArrayList<String> A) {
+        int len = Integer.MAX_VALUE;
+        
+        for (String w: A) {
+            if (w.length() < len) {
+                len = w.length();
+            }
+        }
+        
+        return len;
+    }
+}
 
 ```
 
