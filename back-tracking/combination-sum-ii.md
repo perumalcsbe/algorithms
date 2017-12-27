@@ -25,25 +25,28 @@ A solution set is:
 class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         ArrayList<List<Integer>> list = new ArrayList<List<Integer>>();
-        
+
         // base case
         if (candidates == null || candidates.length < 1) {
             return list;
         }
         // sort candidates O(nlogn)
         Arrays.sort(candidates);
-        
+
         ArrayList<Integer> set = new ArrayList<Integer>();
         dfs(candidates, target, 0, set, list);
-        
+
         return list;
     }
-    
+
     private void dfs(int[] candidates, int target, int start, ArrayList<Integer> set, ArrayList<List<Integer>> list) {
         // base case
         if (target == 0) {
             ArrayList<Integer> temp = new ArrayList<Integer>(set);
             list.add(temp);
+            return;
+        }
+        if (target < 0) {
             return;
         }
         int prev = -1; // to avoid duplicates 
@@ -57,7 +60,6 @@ class Solution {
         }
     }
 }
-
 ```
 
 

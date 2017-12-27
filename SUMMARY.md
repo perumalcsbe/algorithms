@@ -92,6 +92,7 @@
   * [Combinations](back-tracking/combinations.md)
   * [Combination Sum](back-tracking/combination-sum.md)
   * [Combination Sum II](back-tracking/combination-sum-ii.md)
+  * [Combination Sum III](back-tracking/combination-sum-iii.md)
 * [Stack](stack.md)
   * [Valid Parentheses](stack/valid-parentheses.md)
   * [Decode String](stack/decode-string.md)
