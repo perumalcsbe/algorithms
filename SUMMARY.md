@@ -157,6 +157,7 @@
   * [Distinct Subsequences](distinct-subsequences.md)
   * [Cutting a Rod](cutting-a-rod.md)
   * [Min Cost Climbing Stairs](min-cost-climbing-stairs.md)
+  * [Longest Valid Parentheses](longest-valid-parentheses.md)
 * [HashMap](hashmap.md)
   * [Longest Substring Without Repeating Characters](hashmap/longest-substring-without-repeating-characters.md)
   * [Compare Strings](hashmap/compare-strings.md)
