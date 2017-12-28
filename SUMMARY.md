@@ -98,6 +98,7 @@
   * [Decode String](stack/decode-string.md)
   * [Min Stack](stack/min-stack.md)
   * [Find matching parenthesis](stack/find-matching-parenthesis.md)
+  * [Implement Stack using Queues](stack/implement-stack-using-queues.md)
 * [Depth First Search](depth-first-search.md)
   * [Remove Invalid Parentheses](depth-first-search/remove-invalid-parentheses.md)
   * [Generate Parentheses](generate-parentheses.md)

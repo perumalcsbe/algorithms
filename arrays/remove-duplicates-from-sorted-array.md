@@ -32,7 +32,7 @@ public class Solution {
                i++;
             } else {
                 k++;
-                nums[k] = nums[i];
+                nums[k] = nums[i];    
                 i++;
             }
        }
