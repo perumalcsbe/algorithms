@@ -53,7 +53,34 @@ var singleNumber = function(nums) {
 
         return -1;
     }
+    
 ```
+
+**Approach: Bit Manipulation**
+
+```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public int singleNumber(final List<Integer> A) {
+        int ones = 0;
+        int twos = 0;
+        int threes = 0;
+        
+        for (int a: A) {
+            twos |= ones & a;
+            ones ^= a;
+            threes = ones & twos;
+            twos &= ~threes;
+            ones &= ~threes;
+        }
+        
+        return ones;
+    }
+}
+
+```
+
+
 
 
 
