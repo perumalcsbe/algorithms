@@ -177,6 +177,9 @@
   * [Knuth-Morris-Pratt ](algorithms/knuth-morris-pratt.md)
   * [Z](algorithms/z.md)
   * [Manacher's algorithm](algorithms/manachers-algorithm.md)
+  * [Rabin Karp](algorithms/rabin-karp.md)
 * Matrix
   * [Matrix Diagonal](matrix-diagonal.md)
+* Bit Manipulation
+  * [Number of 1 Bits](number-of-1-bitsbookmark-suggest-edit.md)
 
