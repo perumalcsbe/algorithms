@@ -58,6 +58,7 @@
     * [Two Sum](arrays/two-sum.md)
     * [Two Sum - Input array is sorted ](arrays/two-sum-input-array-is-sorted.md)
     * [3Sum](arrays/3sum.md)
+    * [3 sum closet](arrays/3-sum-closet.md)
   * [Median](arrays/median.md)
   * [Rotates](arrays/rotates.md)
     * [Rotate Array](arrays/rotates/rotate-array.md)
